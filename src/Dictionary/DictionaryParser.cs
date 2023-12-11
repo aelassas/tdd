@@ -29,13 +29,13 @@ public class DictionaryParser(IDictionaryLoader loader) : IDictionaryParser
                 var key = match.Groups["key"].Value;
                 var value = match.Groups["value"].Value;
 
-                if (!dictionary.ContainsKey(key))
+                if (dictionary.TryGetValue(key, out var translations))
                 {
-                    dictionary.Add(key, new Dictionary<string, string> { { value, key } });
+                    translations.Add(value, key);
                 }
                 else
                 {
-                    dictionary[key].Add(value, key);
+                    dictionary.Add(key, new Dictionary<string, string> { { value, key } });
                 }
             }
         }

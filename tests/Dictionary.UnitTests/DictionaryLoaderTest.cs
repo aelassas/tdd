@@ -6,7 +6,7 @@ public class DictionaryLoaderTest
     public void TestEmptyFile()
     {
         var dictionaryLoader = new DictionaryLoader(@"..\..\..\..\..\data\dict-empty.txt");
-        Assert.Equal(new string[] { }, dictionaryLoader.GetLines());
+        Assert.Equal(Array.Empty<string>(), dictionaryLoader.GetLines());
     }
 
     [Fact]

@@ -13,7 +13,7 @@ public class DictionaryDataSourceTest
             .Returns(new Dictionary<string, Dictionary<string, string>>());
 
         var dictionary = new Dictionary(mockDictionaryParser.Object);
-        Assert.Equal(new string[] { }, dictionary.GetTranslation("against"));
+        Assert.Equal(Array.Empty<string>(), dictionary.GetTranslation("against"));
     }
 
     [Fact]

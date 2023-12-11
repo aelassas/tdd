@@ -7,21 +7,21 @@ public class Dictionary(IDictionaryParser parser)
 
     public void AddTranslation(string word, string translation)
     {
-        if (!_translations.ContainsKey(word))
+        if (_translations.TryGetValue(word, out var translations))
         {
-            _translations.Add(word, new Dictionary<string, string> { { translation, word } });
+            translations.Add(translation, word);
         }
         else
         {
-            _translations[word].Add(translation, word);
+            _translations.Add(word, new Dictionary<string, string> { { translation, word } });
         }
     }
 
     public string[] GetTranslation(string word)
     {
-        if (_translations.TryGetValue(word, out var translation))
+        if (_translations.TryGetValue(word, out var translations))
         {
-            return translation.Keys.ToArray();
+            return translations.Keys.ToArray();
         }
 
         return (from t in _translations

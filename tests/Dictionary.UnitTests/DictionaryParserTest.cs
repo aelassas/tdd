@@ -10,7 +10,7 @@ public class DictionaryParserTest
         var mockDictionaryLoader = new Mock<IDictionaryLoader>();
         mockDictionaryLoader
             .Setup(dl => dl.GetLines())
-            .Returns(new string[] { });
+            .Returns(Array.Empty<string>());
 
         var dictionaryParser = new DictionaryParser(mockDictionaryLoader.Object);
         Assert.Equal(string.Empty, dictionaryParser.GetName());
@@ -22,7 +22,7 @@ public class DictionaryParserTest
         var mockDictionaryLoader = new Mock<IDictionaryLoader>();
         mockDictionaryLoader
             .Setup(dl => dl.GetLines())
-            .Returns(new string[] { });
+            .Returns(Array.Empty<string>());
 
         var dictionaryParser = new DictionaryParser(mockDictionaryLoader.Object);
         Assert.Equal(new Dictionary<string, Dictionary<string, string>>(), dictionaryParser.GetTranslations());
