@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictionary", "src\Dictionary\Dictionary.csproj", "{52139E0B-76D9-4A6E-8812-637FC3AA900C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary.UnitTests", "tests\Dictionary.UnitTests\Dictionary.UnitTests.csproj", "{9F343BBB-F64E-4C69-81F3-034AC63D7601}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5D76365D-C61A-4EB7-9487-AE5A120FBEAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5FE0CDB1-C4BF-4A8C-A5DF-4623C2191BB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionary.IntegrationTests", "tests\Dictionary.IntegrationTests\Dictionary.IntegrationTests.csproj", "{B6061974-1B25-4872-82BC-993FE5FB8488}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{27AA1641-D176-497E-A2FD-F5AF14DCAAF7}"
+	ProjectSection(SolutionItems) = preProject
+		data\dict-empty.txt = data\dict-empty.txt
+		data\dict-erroneous.txt = data\dict-erroneous.txt
+		data\dict-name.txt = data\dict-name.txt
+		data\dict.txt = data\dict.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "global", "global", "{F8C0CF9F-5BDC-44E2-A941-12C3633C257C}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{125A5AA8-993C-454A-9307-6283CF5AAF34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{8507BD5C-4414-427A-B643-2C985C3C50AF}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build.yml = .github\workflows\build.yml
+		.github\workflows\test.yml = .github\workflows\test.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52139E0B-76D9-4A6E-8812-637FC3AA900C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52139E0B-76D9-4A6E-8812-637FC3AA900C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52139E0B-76D9-4A6E-8812-637FC3AA900C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52139E0B-76D9-4A6E-8812-637FC3AA900C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F343BBB-F64E-4C69-81F3-034AC63D7601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F343BBB-F64E-4C69-81F3-034AC63D7601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F343BBB-F64E-4C69-81F3-034AC63D7601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F343BBB-F64E-4C69-81F3-034AC63D7601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6061974-1B25-4872-82BC-993FE5FB8488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6061974-1B25-4872-82BC-993FE5FB8488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6061974-1B25-4872-82BC-993FE5FB8488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6061974-1B25-4872-82BC-993FE5FB8488}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{52139E0B-76D9-4A6E-8812-637FC3AA900C} = {5D76365D-C61A-4EB7-9487-AE5A120FBEAD}
+		{9F343BBB-F64E-4C69-81F3-034AC63D7601} = {5FE0CDB1-C4BF-4A8C-A5DF-4623C2191BB8}
+		{B6061974-1B25-4872-82BC-993FE5FB8488} = {5FE0CDB1-C4BF-4A8C-A5DF-4623C2191BB8}
+		{8507BD5C-4414-427A-B643-2C985C3C50AF} = {125A5AA8-993C-454A-9307-6283CF5AAF34}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9524A492-B719-4E0A-817F-6D0F639F1516}
+	EndGlobalSection
+EndGlobal
