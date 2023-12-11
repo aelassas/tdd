@@ -24,6 +24,30 @@ public class DictionaryTest
     }
 
     [Fact]
+    public void TestAddTranslation()
+    {
+        var dictionary = new Dictionary(new DictionaryParser(new DictionaryLoader(@"..\..\..\..\..\data\dict-name.txt")));
+        dictionary.AddTranslation("against", "contre");
+        Assert.Equal(new[] { "contre" }, dictionary.GetTranslation("against"));
+    }
+
+    [Fact]
+    public void TestAddTranslations()
+    {
+        var dictionary = new Dictionary(new DictionaryParser(new DictionaryLoader(@"..\..\..\..\..\data\dict-name.txt")));
+        dictionary.AddTranslation("against", "contre");
+        dictionary.AddTranslation("against", "versus");
+        Assert.Equal(new[] { "contre", "versus" }, dictionary.GetTranslation("against"));
+    }
+
+    [Fact]
+    public void TestNoTranslation()
+    {
+        var dictionary = new Dictionary(new DictionaryParser(new DictionaryLoader(@"..\..\..\..\..\data\dict-name.txt")));
+        Assert.Equal(Array.Empty<string>(), dictionary.GetTranslation("against"));
+    }
+
+    [Fact]
     public void TestOneTranslation()
     {
         var dictionary = new Dictionary(new DictionaryParser(new DictionaryLoader(@"..\..\..\..\..\data\dict.txt")));
@@ -35,5 +59,12 @@ public class DictionaryTest
     {
         var dictionary = new Dictionary(new DictionaryParser(new DictionaryLoader(@"..\..\..\..\..\data\dict.txt")));
         Assert.Equal(new[] { "contre", "versus" }, dictionary.GetTranslation("against"));
+    }
+
+    [Fact]
+    public void TestReverseTranslation()
+    {
+        var dictionary = new Dictionary(new DictionaryParser(new DictionaryLoader(@"..\..\..\..\..\data\dict.txt")));
+        Assert.Equal("against", dictionary.GetTranslation("contre")[0]);
     }
 }
