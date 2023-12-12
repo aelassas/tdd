@@ -3,6 +3,13 @@ namespace Dictionary.IntegrationTests;
 public class DictionaryTest
 {
     [Fact]
+    public void TestEmptyFileTranslations()
+    {
+        var dictionary = new Dictionary(new DictionaryParser(new DictionaryLoader(@"..\..\..\..\..\data\dict-empty.txt")));
+        Assert.Equal(Array.Empty<string>(), dictionary.GetTranslation("against"));
+    }
+
+    [Fact]
     public void TestDictionaryName()
     {
         var dictionary = new Dictionary(new DictionaryParser(new DictionaryLoader(@"..\..\..\..\..\data\dict-name.txt")));
@@ -14,12 +21,8 @@ public class DictionaryTest
     {
         var dictionary = new Dictionary(new DictionaryParser(new DictionaryLoader(@"..\..\..\..\..\data\dict-name.txt")));
         Assert.True(dictionary.IsEmpty());
-    }
 
-    [Fact]
-    public void TestIsNotEmpty()
-    {
-        var dictionary = new Dictionary(new DictionaryParser(new DictionaryLoader(@"..\..\..\..\..\data\dict.txt")));
+        dictionary = new Dictionary(new DictionaryParser(new DictionaryLoader(@"..\..\..\..\..\data\dict.txt")));
         Assert.False(dictionary.IsEmpty());
     }
 
@@ -59,6 +62,12 @@ public class DictionaryTest
     {
         var dictionary = new Dictionary(new DictionaryParser(new DictionaryLoader(@"..\..\..\..\..\data\dict.txt")));
         Assert.Equal(new[] { "contre", "versus" }, dictionary.GetTranslation("against"));
+    }
+
+    [Fact]
+    public void TestErroneousFile()
+    {
+        Assert.Throws<DictionaryException>(() => new Dictionary(new DictionaryParser(new DictionaryLoader(@"..\..\..\..\..\data\dict-erroneous.txt"))));
     }
 
     [Fact]

@@ -5,7 +5,7 @@ namespace Dictionary.UnitTests;
 public class DictionaryParserTest
 {
     [Fact]
-    public void TestEmptyFileName()
+    public void TestEmptyDictionaryName()
     {
         var mockDictionaryLoader = new Mock<IDictionaryLoader>();
         mockDictionaryLoader
@@ -17,7 +17,7 @@ public class DictionaryParserTest
     }
 
     [Fact]
-    public void TestEmptyFileTranslations()
+    public void TestNoTranslations()
     {
         var mockDictionaryLoader = new Mock<IDictionaryLoader>();
         mockDictionaryLoader

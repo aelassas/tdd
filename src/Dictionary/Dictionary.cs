@@ -1,9 +1,21 @@
 ﻿namespace Dictionary;
 
-public class Dictionary(IDictionaryParser parser)
+public class Dictionary
 {
-    private readonly Dictionary<string, Dictionary<string, string>> _translations = parser.GetTranslations();
-    public string Name { get; } = parser.GetName();
+    private readonly Dictionary<string, Dictionary<string, string>> _translations;
+    public string Name { get; private set; }
+
+    public Dictionary(string name)
+    {
+        _translations = new Dictionary<string, Dictionary<string, string>>();
+        Name = name;
+    }
+
+    public Dictionary(IDictionaryParser parser)
+    {
+        _translations = parser.GetTranslations();
+        Name = parser.GetName();
+    }
 
     public void AddTranslation(string word, string translation)
     {
@@ -24,6 +36,7 @@ public class Dictionary(IDictionaryParser parser)
             return translations.Keys.ToArray();
         }
 
+        // Try reverse translation
         return (from t in _translations
                 from v in t.Value.Values
                 where t.Value.ContainsKey(word)
