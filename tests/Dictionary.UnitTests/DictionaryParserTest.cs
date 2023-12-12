@@ -25,7 +25,7 @@ public class DictionaryParserTest
             .Returns(Array.Empty<string>());
 
         var dictionaryParser = new DictionaryParser(mockDictionaryLoader.Object);
-        Assert.Equal(new Dictionary<string, Dictionary<string, string>>(), dictionaryParser.GetTranslations());
+        Assert.Equal(new Dictionary<string, List<string>>(), dictionaryParser.GetTranslations());
     }
 
     [Fact]
@@ -49,13 +49,9 @@ public class DictionaryParserTest
             .Returns(new[] { "en-fr", "against = contre", "against = versus" });
 
         var dictionaryParser = new DictionaryParser(mockDictionaryLoader.Object);
-        var expected = new Dictionary<string, Dictionary<string, string>>
+        var expected = new Dictionary<string, List<string>>
         {
-            {"against", new Dictionary<string, string> {
-                  {"contre", "against"},
-                  {"versus", "against"}
-                }
-            }
+            {"against", ["contre","versus"]}
         };
         Assert.Equal(expected, dictionaryParser.GetTranslations());
     }

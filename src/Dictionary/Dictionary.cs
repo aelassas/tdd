@@ -2,12 +2,12 @@
 
 public class Dictionary
 {
-    private readonly Dictionary<string, Dictionary<string, string>> _translations;
+    private readonly Dictionary<string, List<string>> _translations;
     public string Name { get; private set; }
 
     public Dictionary(string name)
     {
-        _translations = new Dictionary<string, Dictionary<string, string>>();
+        _translations = new Dictionary<string, List<string>>();
         Name = name;
     }
 
@@ -21,11 +21,11 @@ public class Dictionary
     {
         if (_translations.TryGetValue(word, out var translations))
         {
-            translations.Add(translation, word);
+            translations.Add(translation);
         }
         else
         {
-            _translations.Add(word, new Dictionary<string, string> { { translation, word } });
+            _translations.Add(word, [translation]);
         }
     }
 
@@ -33,14 +33,14 @@ public class Dictionary
     {
         if (_translations.TryGetValue(word, out var translations))
         {
-            return translations.Keys.ToArray();
+            return translations.ToArray();
         }
 
         // Try reverse translation
         return (from t in _translations
-                from v in t.Value.Values
-                where t.Value.ContainsKey(word)
-                select v).Distinct().ToArray();
+                from v in t.Value
+                where t.Value.Contains(word)
+                select t.Key).ToArray();
     }
 
     public bool IsEmpty() => _translations.Count == 0;

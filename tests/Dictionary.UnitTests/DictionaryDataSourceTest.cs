@@ -22,7 +22,7 @@ public class DictionaryDataSourceTest
         var mockDictionaryParser = new Mock<IDictionaryParser>();
         mockDictionaryParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, Dictionary<string, string>>());
+            .Returns(new Dictionary<string, List<string>>());
 
         var dictionary = new Dictionary(mockDictionaryParser.Object);
         Assert.Equal(Array.Empty<string>(), dictionary.GetTranslation("against"));
@@ -46,15 +46,15 @@ public class DictionaryDataSourceTest
         var mockDictionaryParser = new Mock<IDictionaryParser>();
         mockDictionaryParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, Dictionary<string, string>>());
+            .Returns(new Dictionary<string, List<string>>());
 
         var dictionary = new Dictionary(mockDictionaryParser.Object);
         Assert.True(dictionary.IsEmpty());
 
         mockDictionaryParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, Dictionary<string, string>> {
-                    {"against", new Dictionary<string, string> {{"contre", "against"}} }
+            .Returns(new Dictionary<string, List<string>> {
+                    {"against", ["contre", "against"] }
                 }
             );
         dictionary = new Dictionary(mockDictionaryParser.Object);
@@ -67,7 +67,7 @@ public class DictionaryDataSourceTest
         var mockDictionaryParser = new Mock<IDictionaryParser>();
         mockDictionaryParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, Dictionary<string, string>>());
+            .Returns(new Dictionary<string, List<string>>());
 
         var dictionary = new Dictionary(mockDictionaryParser.Object);
         dictionary.AddTranslation("against", "contre");
@@ -80,7 +80,7 @@ public class DictionaryDataSourceTest
         var mockDictionaryParser = new Mock<IDictionaryParser>();
         mockDictionaryParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, Dictionary<string, string>>());
+            .Returns(new Dictionary<string, List<string>>());
 
         var dictionary = new Dictionary(mockDictionaryParser.Object);
         dictionary.AddTranslation("against", "contre");
@@ -94,7 +94,7 @@ public class DictionaryDataSourceTest
         var mockDictionaryParser = new Mock<IDictionaryParser>();
         mockDictionaryParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, Dictionary<string, string>>());
+            .Returns(new Dictionary<string, List<string>>());
 
         var dictionary = new Dictionary(mockDictionaryParser.Object);
         Assert.Equal(Array.Empty<string>(), dictionary.GetTranslation("against"));
@@ -106,8 +106,8 @@ public class DictionaryDataSourceTest
         var mockDictionaryParser = new Mock<IDictionaryParser>();
         mockDictionaryParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, Dictionary<string, string>> {
-                    {"against", new Dictionary<string, string> {{"contre", "against"}} }
+            .Returns(new Dictionary<string, List<string>> {
+                    {"against", ["contre", "against"] }
                 }
             );
 
@@ -121,13 +121,9 @@ public class DictionaryDataSourceTest
         var mockDictionaryParser = new Mock<IDictionaryParser>();
         mockDictionaryParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, Dictionary<string, string>>
+            .Returns(new Dictionary<string, List<string>>
             {
-                { "against", new Dictionary<string, string> {
-                      {"contre", "against"},
-                      {"versus", "against"}
-                    }
-                }
+                { "against", ["contre", "versus"]}
             });
 
         var dictionary = new Dictionary(mockDictionaryParser.Object);
@@ -151,8 +147,8 @@ public class DictionaryDataSourceTest
         var mockDictionaryParser = new Mock<IDictionaryParser>();
         mockDictionaryParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, Dictionary<string, string>> {
-                    {"against", new Dictionary<string, string> {{"contre", "against"}} }
+            .Returns(new Dictionary<string, List<string>> {
+                    {"against", ["contre", "against"] }
                 }
             );
 

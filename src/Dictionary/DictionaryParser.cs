@@ -8,9 +8,9 @@ public class DictionaryParser(IDictionaryLoader loader) : IDictionaryParser
 
     public string GetName() => _lines.Length > 0 ? _lines[0] : string.Empty;
 
-    public Dictionary<string, Dictionary<string, string>> GetTranslations()
+    public Dictionary<string, List<string>> GetTranslations()
     {
-        var dictionary = new Dictionary<string, Dictionary<string, string>>();
+        var dictionary = new Dictionary<string, List<string>>();
 
         if (_lines.Length > 1)
         {
@@ -31,11 +31,11 @@ public class DictionaryParser(IDictionaryLoader loader) : IDictionaryParser
 
                 if (dictionary.TryGetValue(key, out var translations))
                 {
-                    translations.Add(value, key);
+                    translations.Add(value);
                 }
                 else
                 {
-                    dictionary.Add(key, new Dictionary<string, string> { { value, key } });
+                    dictionary.Add(key, [value]);
                 }
             }
         }
