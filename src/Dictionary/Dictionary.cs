@@ -38,7 +38,6 @@ public class Dictionary
 
         // Try reverse translation
         return (from t in _translations
-                from v in t.Value
                 where t.Value.Contains(word)
                 select t.Key).ToArray();
     }
