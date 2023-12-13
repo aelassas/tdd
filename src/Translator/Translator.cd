@@ -8,14 +8,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Translator.TranslatorException" Collapsed="true">
-    <Position X="5.75" Y="1" Width="1.5" />
+    <Position X="5.75" Y="1" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TranslatorException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Translator.TranslatorLoader" BaseTypeListCollapsed="true">
-    <Position X="9.25" Y="2.5" Width="1.5" />
+    <Position X="9.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
       <FileName>TranslatorLoader.cs</FileName>
@@ -23,7 +23,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="Translator.TranslatorParser" BaseTypeListCollapsed="true">
-    <Position X="7.5" Y="2.5" Width="1.5" />
+    <Position X="7.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAIAAABAA=</HashCode>
       <FileName>TranslatorParser.cs</FileName>
@@ -31,14 +31,14 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Interface Name="Translator.ITranslatorLoader">
-    <Position X="9.25" Y="1" Width="1.5" />
+    <Position X="9.5" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
       <FileName>ITranslatorLoader.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Translator.ITranslatorParser">
-    <Position X="7.5" Y="1" Width="1.5" />
+    <Position X="7.75" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAABAA=</HashCode>
       <FileName>ITranslatorParser.cs</FileName>
