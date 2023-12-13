@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Translator.Translator" Collapsed="true">
-    <Position X="4" Y="1" Width="1.5" />
+  <Class Name="Translator.Translator">
+    <Position X="3.5" Y="1" Width="2" />
     <TypeIdentifier>
       <HashCode>AABAAAAAAEAAAAAAAAAAAARAAAAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>Translator.cs</FileName>
@@ -14,31 +14,31 @@
       <FileName>TranslatorException.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Translator.TranslatorLoader" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="4" Y="2" Width="1.5" />
+  <Class Name="Translator.TranslatorLoader" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
       <FileName>TranslatorLoader.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="Translator.TranslatorParser" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="5.75" Y="2" Width="1.5" />
+  <Class Name="Translator.TranslatorParser" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAIAAABAA=</HashCode>
       <FileName>TranslatorParser.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Interface Name="Translator.ITranslatorLoader" Collapsed="true">
-    <Position X="4" Y="3.25" Width="1.5" />
+  <Interface Name="Translator.ITranslatorLoader">
+    <Position X="9.25" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
       <FileName>ITranslatorLoader.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Translator.ITranslatorParser" Collapsed="true">
-    <Position X="5.75" Y="3.25" Width="1.5" />
+  <Interface Name="Translator.ITranslatorParser">
+    <Position X="7.5" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAABAA=</HashCode>
       <FileName>ITranslatorParser.cs</FileName>
