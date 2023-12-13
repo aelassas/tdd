@@ -1,8 +1,8 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Dictionary;
+namespace Translator;
 
-public class DictionaryParser(IDictionaryLoader loader) : IDictionaryParser
+public class TranslatorParser(ITranslatorLoader loader) : ITranslatorParser
 {
     private readonly string[] _lines = loader.GetLines();
 
@@ -10,7 +10,7 @@ public class DictionaryParser(IDictionaryLoader loader) : IDictionaryParser
 
     public Dictionary<string, List<string>> GetTranslations()
     {
-        var dictionary = new Dictionary<string, List<string>>();
+        var translator = new Dictionary<string, List<string>>();
 
         if (_lines.Length > 1)
         {
@@ -23,23 +23,23 @@ public class DictionaryParser(IDictionaryLoader loader) : IDictionaryParser
 
                 if (!match.Success)
                 {
-                    throw new DictionaryException("The file is erroneous.");
+                    throw new TranslatorException("The file is erroneous.");
                 }
 
                 var key = match.Groups["key"].Value;
                 var value = match.Groups["value"].Value;
 
-                if (dictionary.TryGetValue(key, out var translations))
+                if (translator.TryGetValue(key, out var translations))
                 {
                     translations.Add(value);
                 }
                 else
                 {
-                    dictionary.Add(key, [value]);
+                    translator.Add(key, [value]);
                 }
             }
         }
 
-        return dictionary;
+        return translator;
     }
 }

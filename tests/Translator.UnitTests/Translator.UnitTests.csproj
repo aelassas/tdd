@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Dictionary\Dictionary.csproj" />
+    <ProjectReference Include="..\..\src\Translator\Translator.csproj" />
   </ItemGroup>
 
 </Project>

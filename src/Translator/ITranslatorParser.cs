@@ -1,6 +1,6 @@
-﻿namespace Dictionary;
+﻿namespace Translator;
 
-public interface IDictionaryParser
+public interface ITranslatorParser
 {
     string GetName();
     Dictionary<string, List<string>> GetTranslations();

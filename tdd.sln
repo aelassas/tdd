@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictionary", "src\Dictionary\Dictionary.csproj", "{52139E0B-76D9-4A6E-8812-637FC3AA900C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Translator", "src\Translator\Translator.csproj", "{52139E0B-76D9-4A6E-8812-637FC3AA900C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictionary.UnitTests", "tests\Dictionary.UnitTests\Dictionary.UnitTests.csproj", "{9F343BBB-F64E-4C69-81F3-034AC63D7601}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Translator.UnitTests", "tests\Translator.UnitTests\Translator.UnitTests.csproj", "{9F343BBB-F64E-4C69-81F3-034AC63D7601}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5D76365D-C61A-4EB7-9487-AE5A120FBEAD}"
 EndProject
@@ -13,10 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5FE0CDB1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{27AA1641-D176-497E-A2FD-F5AF14DCAAF7}"
 	ProjectSection(SolutionItems) = preProject
-		data\dict-empty.txt = data\dict-empty.txt
-		data\dict-erroneous.txt = data\dict-erroneous.txt
-		data\dict-name.txt = data\dict-name.txt
-		data\dict.txt = data\dict.txt
+		data\translator-empty.txt = data\translator-empty.txt
+		data\translator-erroneous.txt = data\translator-erroneous.txt
+		data\translator.txt = data\translator.txt
+		data\translator-name.txt = data\translator-name.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "global", "global", "{F8C0CF9F-5BDC-44E2-A941-12C3633C257C}"

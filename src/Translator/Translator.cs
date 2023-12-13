@@ -1,17 +1,17 @@
-﻿namespace Dictionary;
+﻿namespace Translator;
 
-public class Dictionary
+public class Translator
 {
     private readonly Dictionary<string, List<string>> _translations;
     public string Name { get; private set; }
 
-    public Dictionary(string name)
+    public Translator(string name)
     {
         _translations = new Dictionary<string, List<string>>();
         Name = name;
     }
 
-    public Dictionary(IDictionaryParser parser)
+    public Translator(ITranslatorParser parser)
     {
         _translations = parser.GetTranslations();
         Name = parser.GetName();
