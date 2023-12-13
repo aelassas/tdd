@@ -351,3 +351,5 @@ MigrationBackup/
 
 # appsettings
 /**/appsettings.Local.json
+
+*.exe
