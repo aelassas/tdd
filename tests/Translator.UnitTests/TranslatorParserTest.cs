@@ -67,7 +67,7 @@ public class TranslatorParserTest
         var translatorParser = new TranslatorParser(mockTranslatorLoader.Object);
         var expected = new Dictionary<string, List<string>>
         {
-            {"against", ["contre","versus"]}
+            {"against", ["contre", "versus"]}
         };
         Assert.Equal(expected, translatorParser.GetTranslations());
     }
