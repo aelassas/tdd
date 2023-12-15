@@ -41,6 +41,22 @@ public class TranslatorParserTest
     }
 
     [Fact]
+    public void TestOneTranslation()
+    {
+        var mockTranslatorLoader = new Mock<ITranslatorLoader>();
+        mockTranslatorLoader
+            .Setup(dl => dl.GetLines())
+            .Returns(["en-fr", "against = contre"]);
+
+        var translatorParser = new TranslatorParser(mockTranslatorLoader.Object);
+        var expected = new Dictionary<string, List<string>>
+        {
+            {"against", ["contre"]}
+        };
+        Assert.Equal(expected, translatorParser.GetTranslations());
+    }
+
+    [Fact]
     public void TestMultipleTranslations()
     {
         var mockTranslatorLoader = new Mock<ITranslatorLoader>();

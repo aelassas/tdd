@@ -112,7 +112,7 @@ public class TranslatorDataSourceTest
             });
 
         var translator = new Translator(mockTranslatorParser.Object);
-        Assert.Equal("contre", translator.GetTranslation("against")[0]);
+        Assert.Equal<string[]>(["contre"], translator.GetTranslation("against"));
     }
 
     [Fact]
