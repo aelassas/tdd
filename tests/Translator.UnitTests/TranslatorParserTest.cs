@@ -10,22 +10,22 @@ public class TranslatorParserTest
         var mockTranslatorLoader = new Mock<ITranslatorLoader>();
         mockTranslatorLoader
             .Setup(dl => dl.GetLines())
-            .Returns(Array.Empty<string>());
+            .Returns([]);
 
         var translatorParser = new TranslatorParser(mockTranslatorLoader.Object);
         Assert.Equal(string.Empty, translatorParser.GetName());
     }
 
     [Fact]
-    public void TestNoTranslations()
+    public void TestNoTranslation()
     {
         var mockTranslatorLoader = new Mock<ITranslatorLoader>();
         mockTranslatorLoader
             .Setup(dl => dl.GetLines())
-            .Returns(Array.Empty<string>());
+            .Returns([]);
 
         var translatorParser = new TranslatorParser(mockTranslatorLoader.Object);
-        Assert.Equal(new Dictionary<string, List<string>>(), translatorParser.GetTranslations());
+        Assert.Equal([], translatorParser.GetTranslations());
     }
 
     [Fact]
@@ -34,7 +34,7 @@ public class TranslatorParserTest
         var mockTranslatorLoader = new Mock<ITranslatorLoader>();
         mockTranslatorLoader
             .Setup(dl => dl.GetLines())
-            .Returns(new[] { "en-fr" });
+            .Returns(["en-fr"]);
 
         var translatorParser = new TranslatorParser(mockTranslatorLoader.Object);
         Assert.Equal("en-fr", translatorParser.GetName());
@@ -46,7 +46,7 @@ public class TranslatorParserTest
         var mockTranslatorLoader = new Mock<ITranslatorLoader>();
         mockTranslatorLoader
             .Setup(dl => dl.GetLines())
-            .Returns(new[] { "en-fr", "against = contre", "against = versus" });
+            .Returns(["en-fr", "against = contre", "against = versus"]);
 
         var translatorParser = new TranslatorParser(mockTranslatorLoader.Object);
         var expected = new Dictionary<string, List<string>>
@@ -62,9 +62,9 @@ public class TranslatorParserTest
         var mockTranslatorLoader = new Mock<ITranslatorLoader>();
         mockTranslatorLoader
             .Setup(dl => dl.GetLines())
-            .Returns(new[] { "en-fr", "against = ", "against = " });
+            .Returns(["en-fr", "against = ", "against = "]);
 
         var translatorParser = new TranslatorParser(mockTranslatorLoader.Object);
-        Assert.Throws<TranslatorException>(() => translatorParser.GetTranslations());
+        Assert.Throws<TranslatorException>(translatorParser.GetTranslations);
     }
 }

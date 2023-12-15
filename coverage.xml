@@ -1,42 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Root CoveredStatements="204" TotalStatements="204" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2023.3">
+<Root CoveredStatements="208" TotalStatements="208" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2023.3">
   <FileIndices>
     <File Index="1" Name="C:\dev\tdd\src\src\Translator\ITranslatorLoader.cs" ChecksumAlgorithm="SHA256" Checksum="0E59258BE8AA93D943312D5F8448EAF2A2F3428E91A06426ECBDA7B9228382FD" />
     <File Index="2" Name="C:\dev\tdd\src\src\Translator\ITranslatorParser.cs" ChecksumAlgorithm="SHA256" Checksum="615792F9880EBA2ACA0797170F422F1ED797E31393F4AD44F8AACE6BB9E519B3" />
-    <File Index="3" Name="C:\dev\tdd\src\src\Translator\Translator.cs" ChecksumAlgorithm="SHA256" Checksum="EBCB277181914A57AB43E691EBC8D8CC75B7853B3D27308398C487E74DE03049" />
+    <File Index="3" Name="C:\dev\tdd\src\src\Translator\Translator.cs" ChecksumAlgorithm="SHA256" Checksum="C24156A6FA552F1BAE4991AA49F7B7D1A1277C9EA54C9A4EEB76B098F847407E" />
     <File Index="4" Name="C:\dev\tdd\src\src\Translator\TranslatorException.cs" ChecksumAlgorithm="SHA256" Checksum="A0B1F00B924C46596ECAC13E0F8059C2C1B88702599BCA2E7108E6AA398E6EF4" />
     <File Index="5" Name="C:\dev\tdd\src\src\Translator\TranslatorLoader.cs" ChecksumAlgorithm="SHA256" Checksum="753B0EBC8E188D22237E1340A423DA4463AF413CBCB6B4475FFDE2FC0BEB6796" />
-    <File Index="6" Name="C:\dev\tdd\src\src\Translator\TranslatorParser.cs" ChecksumAlgorithm="SHA256" Checksum="C0C838EEF65261D929F69BD3BF0D8BB55444ECAB94DDDFD23A3B2DDBEA1B8078" />
+    <File Index="6" Name="C:\dev\tdd\src\src\Translator\TranslatorParser.cs" ChecksumAlgorithm="SHA256" Checksum="6CF4BB07312BC05FF0F45DE548974A6C4630CFA1AC37C72A96AF6619191D0C4E" />
     <File Index="7" Name="C:\dev\tdd\src\src\Translator\obj\Debug\net8.0\Translator.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
     <File Index="8" Name="C:\dev\tdd\src\src\Translator\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="F7A5D9789C863625E139FF99E1113A503830F6B85A88F6129916DF83AC76B49E" />
-    <File Index="9" Name="C:\dev\tdd\src\src\Translator\obj\Debug\net8.0\Translator.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="46FA855BAA255481C173D16E43865D5BBC6F3968DAEF743FF762B58EF4C7A139" />
-    <File Index="10" Name="C:\dev\tdd\src\tests\Translator.UnitTests\GlobalUsings.cs" ChecksumAlgorithm="SHA256" Checksum="E8DE9B91579BA661CBFEBD3912328C2DC917D2A519CC565B717446C7F39E6D33" />
-    <File Index="11" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorDataSourceTest.cs" ChecksumAlgorithm="SHA256" Checksum="D261199E3207DEDFED289C6BBA4BCDEF2C3CD0D214842C76DCA45FBCAF639A97" />
-    <File Index="12" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorLoaderTest.cs" ChecksumAlgorithm="SHA256" Checksum="3B6D4FDB68424294CE253A538C21F8F2963FE1F997F4A022789A65E9A19143D2" />
-    <File Index="13" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorParserTest.cs" ChecksumAlgorithm="SHA256" Checksum="AB3FA891BAEE309960A5378ECA0EE9F281ECB578E442FA0F13F195058145F783" />
-    <File Index="14" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorTest.cs" ChecksumAlgorithm="SHA256" Checksum="6DC6971D2DA27C5D43E7FFC730B42C49B36FD44992C85B8539512CB37BCDBEE1" />
-    <File Index="15" Name="C:\Users\aelassas\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
-    <File Index="16" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\Translator.UnitTests.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
-    <File Index="17" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="F7A5D9789C863625E139FF99E1113A503830F6B85A88F6129916DF83AC76B49E" />
-    <File Index="18" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\Translator.UnitTests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="A9F1AD5EE15D01EE2736EDE54043C04C27446F6F0FA84F191F87CDF6502DE63D" />
+    <File Index="9" Name="C:\dev\tdd\src\src\Translator\obj\Debug\net8.0\Translator.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="A8F512C1C3CB1B331EE7BDD9E90E1D4C5F4AEAE89E966132DA2B6E5443E0667E" />
+    <File Index="10" Name="C:\dev\tdd\src\src\Translator\System.Text.RegularExpressions.Generator\System.Text.RegularExpressions.Generator.RegexGenerator\RegexGenerator.g.cs" ChecksumAlgorithm="SHA1" Checksum="323E9317E8D2323E841778721237DCD69B7FAAB6" />
+    <File Index="11" Name="C:\dev\tdd\src\tests\Translator.UnitTests\GlobalUsings.cs" ChecksumAlgorithm="SHA256" Checksum="E8DE9B91579BA661CBFEBD3912328C2DC917D2A519CC565B717446C7F39E6D33" />
+    <File Index="12" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorDataSourceTest.cs" ChecksumAlgorithm="SHA256" Checksum="5E3AE48AEA4E464DE8E976A246E0E4B23126A037A143FB0AB891B803FAD1E7DE" />
+    <File Index="13" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorLoaderTest.cs" ChecksumAlgorithm="SHA256" Checksum="B79075D3CC9E3820C09DA610D06D2DD8EBAB64EE1BF8EAA31B97CCF616EDB800" />
+    <File Index="14" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorParserTest.cs" ChecksumAlgorithm="SHA256" Checksum="0B44BD4200FA18A73481D2776AB96B945C1D70EE3DFCC480F2D9316BE0EA0F30" />
+    <File Index="15" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorTest.cs" ChecksumAlgorithm="SHA256" Checksum="8AD00706F1887A66768F8AA96712357DE8BFE1CE397CBD042E622C7BF1210696" />
+    <File Index="16" Name="C:\Users\aelassas\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
+    <File Index="17" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\Translator.UnitTests.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
+    <File Index="18" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="F7A5D9789C863625E139FF99E1113A503830F6B85A88F6129916DF83AC76B49E" />
+    <File Index="19" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\Translator.UnitTests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="4FE806527C4BA6FAC4630FB3954FF43C9D8972338615AC850AC130CFF7507B95" />
   </FileIndices>
   <Assembly Name="Translator" CoveredStatements="63" TotalStatements="63" CoveragePercent="100">
     <Namespace Name="Translator" CoveredStatements="63" TotalStatements="63" CoveragePercent="100">
       <Type Name="Translator" CoveredStatements="30" TotalStatements="30" CoveragePercent="100">
         <Type Name="&lt;&gt;c" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;GetTranslation&gt;b__8_1(System.Collections.Generic.KeyValuePair&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;):System.String" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="3" Line="42" Column="24" EndLine="42" EndColumn="29" Covered="True" />
+            <Statement FileIndex="3" Line="42" Column="27" EndLine="42" EndColumn="32" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;&gt;c__DisplayClass8_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;GetTranslation&gt;b__0(System.Collections.Generic.KeyValuePair&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;):System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="3" Line="41" Column="23" EndLine="41" EndColumn="45" Covered="True" />
+            <Statement FileIndex="3" Line="41" Column="26" EndLine="41" EndColumn="48" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor(System.String):System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
           <Statement FileIndex="3" Line="8" Column="5" EndLine="8" EndColumn="35" Covered="True" />
           <Statement FileIndex="3" Line="9" Column="5" EndLine="9" EndColumn="6" Covered="True" />
-          <Statement FileIndex="3" Line="10" Column="9" EndLine="10" EndColumn="64" Covered="True" />
+          <Statement FileIndex="3" Line="10" Column="9" EndLine="10" EndColumn="28" Covered="True" />
           <Statement FileIndex="3" Line="11" Column="9" EndLine="11" EndColumn="21" Covered="True" />
           <Statement FileIndex="3" Line="12" Column="5" EndLine="12" EndColumn="6" Covered="True" />
         </Method>
@@ -65,8 +66,8 @@
           <Statement FileIndex="3" Line="33" Column="5" EndLine="33" EndColumn="6" Covered="True" />
           <Statement FileIndex="3" Line="34" Column="9" EndLine="34" EndColumn="67" Covered="True" />
           <Statement FileIndex="3" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
-          <Statement FileIndex="3" Line="36" Column="13" EndLine="36" EndColumn="43" Covered="True" />
-          <Statement FileIndex="3" Line="40" Column="9" EndLine="42" EndColumn="41" Covered="True" />
+          <Statement FileIndex="3" Line="36" Column="13" EndLine="36" EndColumn="38" Covered="True" />
+          <Statement FileIndex="3" Line="40" Column="9" EndLine="42" EndColumn="34" Covered="True" />
           <Statement FileIndex="3" Line="43" Column="5" EndLine="43" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="IsEmpty():System.Boolean" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
@@ -91,249 +92,251 @@
       </Type>
       <Type Name="TranslatorParser" CoveredStatements="30" TotalStatements="30" CoveragePercent="100">
         <Method Name=".ctor(Translator.ITranslatorLoader):System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-          <Statement FileIndex="6" Line="7" Column="5" EndLine="7" EndColumn="58" Covered="True" />
-          <Statement FileIndex="6" Line="5" Column="14" EndLine="5" EndColumn="56" Covered="True" />
+          <Statement FileIndex="6" Line="10" Column="5" EndLine="10" EndColumn="58" Covered="True" />
+          <Statement FileIndex="6" Line="5" Column="22" EndLine="5" EndColumn="64" Covered="True" />
         </Method>
         <Method Name="GetName():System.String" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Statement FileIndex="6" Line="9" Column="32" EndLine="9" EndColumn="76" Covered="True" />
+          <Statement FileIndex="6" Line="12" Column="32" EndLine="12" EndColumn="76" Covered="True" />
         </Method>
         <Method Name="GetTranslations():System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" CoveredStatements="27" TotalStatements="27" CoveragePercent="100">
-          <Statement FileIndex="6" Line="12" Column="5" EndLine="12" EndColumn="6" Covered="True" />
-          <Statement FileIndex="6" Line="13" Column="9" EndLine="13" EndColumn="65" Covered="True" />
-          <Statement FileIndex="6" Line="15" Column="9" EndLine="15" EndColumn="31" Covered="True" />
-          <Statement FileIndex="6" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
-          <Statement FileIndex="6" Line="17" Column="13" EndLine="17" EndColumn="70" Covered="True" />
-          <Statement FileIndex="6" Line="19" Column="18" EndLine="19" EndColumn="27" Covered="True" />
-          <Statement FileIndex="6" Line="20" Column="13" EndLine="20" EndColumn="14" Covered="True" />
-          <Statement FileIndex="6" Line="21" Column="17" EndLine="21" EndColumn="38" Covered="True" />
-          <Statement FileIndex="6" Line="22" Column="17" EndLine="22" EndColumn="47" Covered="True" />
-          <Statement FileIndex="6" Line="24" Column="17" EndLine="24" EndColumn="36" Covered="True" />
-          <Statement FileIndex="6" Line="25" Column="17" EndLine="25" EndColumn="18" Covered="True" />
-          <Statement FileIndex="6" Line="26" Column="21" EndLine="26" EndColumn="77" Covered="True" />
-          <Statement FileIndex="6" Line="29" Column="17" EndLine="29" EndColumn="53" Covered="True" />
-          <Statement FileIndex="6" Line="30" Column="17" EndLine="30" EndColumn="57" Covered="True" />
-          <Statement FileIndex="6" Line="32" Column="17" EndLine="32" EndColumn="71" Covered="True" />
-          <Statement FileIndex="6" Line="33" Column="17" EndLine="33" EndColumn="18" Covered="True" />
-          <Statement FileIndex="6" Line="34" Column="21" EndLine="34" EndColumn="45" Covered="True" />
-          <Statement FileIndex="6" Line="35" Column="17" EndLine="35" EndColumn="18" Covered="True" />
-          <Statement FileIndex="6" Line="37" Column="17" EndLine="37" EndColumn="18" Covered="True" />
-          <Statement FileIndex="6" Line="38" Column="21" EndLine="38" EndColumn="50" Covered="True" />
-          <Statement FileIndex="6" Line="39" Column="17" EndLine="39" EndColumn="18" Covered="True" />
-          <Statement FileIndex="6" Line="40" Column="13" EndLine="40" EndColumn="14" Covered="True" />
-          <Statement FileIndex="6" Line="19" Column="48" EndLine="19" EndColumn="51" Covered="True" />
-          <Statement FileIndex="6" Line="19" Column="29" EndLine="19" EndColumn="46" Covered="True" />
-          <Statement FileIndex="6" Line="41" Column="9" EndLine="41" EndColumn="10" Covered="True" />
-          <Statement FileIndex="6" Line="43" Column="9" EndLine="43" EndColumn="27" Covered="True" />
-          <Statement FileIndex="6" Line="44" Column="5" EndLine="44" EndColumn="6" Covered="True" />
+          <Statement FileIndex="6" Line="15" Column="5" EndLine="15" EndColumn="6" Covered="True" />
+          <Statement FileIndex="6" Line="16" Column="9" EndLine="16" EndColumn="65" Covered="True" />
+          <Statement FileIndex="6" Line="18" Column="9" EndLine="18" EndColumn="32" Covered="True" />
+          <Statement FileIndex="6" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+          <Statement FileIndex="6" Line="20" Column="13" EndLine="20" EndColumn="31" Covered="True" />
+          <Statement FileIndex="6" Line="23" Column="9" EndLine="23" EndColumn="39" Covered="True" />
+          <Statement FileIndex="6" Line="25" Column="14" EndLine="25" EndColumn="23" Covered="True" />
+          <Statement FileIndex="6" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+          <Statement FileIndex="6" Line="27" Column="13" EndLine="27" EndColumn="34" Covered="True" />
+          <Statement FileIndex="6" Line="28" Column="13" EndLine="28" EndColumn="43" Covered="True" />
+          <Statement FileIndex="6" Line="30" Column="13" EndLine="30" EndColumn="32" Covered="True" />
+          <Statement FileIndex="6" Line="31" Column="13" EndLine="31" EndColumn="14" Covered="True" />
+          <Statement FileIndex="6" Line="32" Column="17" EndLine="32" EndColumn="73" Covered="True" />
+          <Statement FileIndex="6" Line="35" Column="13" EndLine="35" EndColumn="49" Covered="True" />
+          <Statement FileIndex="6" Line="36" Column="13" EndLine="36" EndColumn="53" Covered="True" />
+          <Statement FileIndex="6" Line="38" Column="13" EndLine="38" EndColumn="67" Covered="True" />
+          <Statement FileIndex="6" Line="39" Column="13" EndLine="39" EndColumn="14" Covered="True" />
+          <Statement FileIndex="6" Line="40" Column="17" EndLine="40" EndColumn="41" Covered="True" />
+          <Statement FileIndex="6" Line="41" Column="13" EndLine="41" EndColumn="14" Covered="True" />
+          <Statement FileIndex="6" Line="43" Column="13" EndLine="43" EndColumn="14" Covered="True" />
+          <Statement FileIndex="6" Line="44" Column="17" EndLine="44" EndColumn="46" Covered="True" />
+          <Statement FileIndex="6" Line="45" Column="13" EndLine="45" EndColumn="14" Covered="True" />
+          <Statement FileIndex="6" Line="46" Column="9" EndLine="46" EndColumn="10" Covered="True" />
+          <Statement FileIndex="6" Line="25" Column="44" EndLine="25" EndColumn="47" Covered="True" />
+          <Statement FileIndex="6" Line="25" Column="25" EndLine="25" EndColumn="42" Covered="True" />
+          <Statement FileIndex="6" Line="48" Column="9" EndLine="48" EndColumn="27" Covered="True" />
+          <Statement FileIndex="6" Line="49" Column="5" EndLine="49" EndColumn="6" Covered="True" />
         </Method>
       </Type>
     </Namespace>
   </Assembly>
-  <Assembly Name="Translator.UnitTests" CoveredStatements="141" TotalStatements="141" CoveragePercent="100">
-    <Namespace Name="Translator.UnitTests" CoveredStatements="141" TotalStatements="141" CoveragePercent="100">
+  <Assembly Name="Translator.UnitTests" CoveredStatements="145" TotalStatements="145" CoveragePercent="100">
+    <Namespace Name="Translator.UnitTests" CoveredStatements="145" TotalStatements="145" CoveragePercent="100">
       <Type Name="TranslatorDataSourceTest" CoveredStatements="72" TotalStatements="72" CoveragePercent="100">
         <Type Name="&lt;&gt;c__DisplayClass9_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;TestErroneousFile&gt;b__1():System.Object" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="11" Line="141" Column="50" EndLine="141" EndColumn="93" Covered="True" />
+            <Statement FileIndex="12" Line="141" Column="50" EndLine="141" EndColumn="93" Covered="True" />
           </Method>
         </Type>
         <Method Name="TestAddTranslation():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-          <Statement FileIndex="11" Line="66" Column="5" EndLine="66" EndColumn="6" Covered="True" />
-          <Statement FileIndex="11" Line="67" Column="9" EndLine="67" EndColumn="66" Covered="True" />
-          <Statement FileIndex="11" Line="68" Column="9" EndLine="70" EndColumn="62" Covered="True" />
-          <Statement FileIndex="11" Line="72" Column="9" EndLine="72" EndColumn="70" Covered="True" />
-          <Statement FileIndex="11" Line="73" Column="9" EndLine="73" EndColumn="56" Covered="True" />
-          <Statement FileIndex="11" Line="74" Column="9" EndLine="74" EndColumn="80" Covered="True" />
-          <Statement FileIndex="11" Line="75" Column="5" EndLine="75" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="66" Column="5" EndLine="66" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="67" Column="9" EndLine="67" EndColumn="66" Covered="True" />
+          <Statement FileIndex="12" Line="68" Column="9" EndLine="70" EndColumn="26" Covered="True" />
+          <Statement FileIndex="12" Line="72" Column="9" EndLine="72" EndColumn="70" Covered="True" />
+          <Statement FileIndex="12" Line="73" Column="9" EndLine="73" EndColumn="56" Covered="True" />
+          <Statement FileIndex="12" Line="74" Column="9" EndLine="74" EndColumn="82" Covered="True" />
+          <Statement FileIndex="12" Line="75" Column="5" EndLine="75" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestAddTranslations():System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
-          <Statement FileIndex="11" Line="79" Column="5" EndLine="79" EndColumn="6" Covered="True" />
-          <Statement FileIndex="11" Line="80" Column="9" EndLine="80" EndColumn="66" Covered="True" />
-          <Statement FileIndex="11" Line="81" Column="9" EndLine="83" EndColumn="62" Covered="True" />
-          <Statement FileIndex="11" Line="85" Column="9" EndLine="85" EndColumn="70" Covered="True" />
-          <Statement FileIndex="11" Line="86" Column="9" EndLine="86" EndColumn="56" Covered="True" />
-          <Statement FileIndex="11" Line="87" Column="9" EndLine="87" EndColumn="56" Covered="True" />
-          <Statement FileIndex="11" Line="88" Column="9" EndLine="88" EndColumn="90" Covered="True" />
-          <Statement FileIndex="11" Line="89" Column="5" EndLine="89" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="79" Column="5" EndLine="79" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="80" Column="9" EndLine="80" EndColumn="66" Covered="True" />
+          <Statement FileIndex="12" Line="81" Column="9" EndLine="83" EndColumn="26" Covered="True" />
+          <Statement FileIndex="12" Line="85" Column="9" EndLine="85" EndColumn="70" Covered="True" />
+          <Statement FileIndex="12" Line="86" Column="9" EndLine="86" EndColumn="56" Covered="True" />
+          <Statement FileIndex="12" Line="87" Column="9" EndLine="87" EndColumn="56" Covered="True" />
+          <Statement FileIndex="12" Line="88" Column="9" EndLine="88" EndColumn="92" Covered="True" />
+          <Statement FileIndex="12" Line="89" Column="5" EndLine="89" EndColumn="6" Covered="True" />
         </Method>
-        <Method Name="TestEmptyFileTranslations():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="11" Line="21" Column="5" EndLine="21" EndColumn="6" Covered="True" />
-          <Statement FileIndex="11" Line="22" Column="9" EndLine="22" EndColumn="66" Covered="True" />
-          <Statement FileIndex="11" Line="23" Column="9" EndLine="25" EndColumn="62" Covered="True" />
-          <Statement FileIndex="11" Line="27" Column="9" EndLine="27" EndColumn="70" Covered="True" />
-          <Statement FileIndex="11" Line="28" Column="9" EndLine="28" EndColumn="83" Covered="True" />
-          <Statement FileIndex="11" Line="29" Column="5" EndLine="29" EndColumn="6" Covered="True" />
+        <Method Name="TestEmptyFile():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="12" Line="21" Column="5" EndLine="21" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="22" Column="9" EndLine="22" EndColumn="66" Covered="True" />
+          <Statement FileIndex="12" Line="23" Column="9" EndLine="25" EndColumn="26" Covered="True" />
+          <Statement FileIndex="12" Line="27" Column="9" EndLine="27" EndColumn="70" Covered="True" />
+          <Statement FileIndex="12" Line="28" Column="9" EndLine="28" EndColumn="64" Covered="True" />
+          <Statement FileIndex="12" Line="29" Column="5" EndLine="29" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestEmptyTranslatorName():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="11" Line="9" Column="5" EndLine="9" EndColumn="6" Covered="True" />
-          <Statement FileIndex="11" Line="10" Column="9" EndLine="10" EndColumn="66" Covered="True" />
-          <Statement FileIndex="11" Line="11" Column="9" EndLine="13" EndColumn="36" Covered="True" />
-          <Statement FileIndex="11" Line="15" Column="9" EndLine="15" EndColumn="70" Covered="True" />
-          <Statement FileIndex="11" Line="16" Column="9" EndLine="16" EndColumn="53" Covered="True" />
-          <Statement FileIndex="11" Line="17" Column="5" EndLine="17" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="9" Column="5" EndLine="9" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="10" Column="9" EndLine="10" EndColumn="66" Covered="True" />
+          <Statement FileIndex="12" Line="11" Column="9" EndLine="13" EndColumn="36" Covered="True" />
+          <Statement FileIndex="12" Line="15" Column="9" EndLine="15" EndColumn="70" Covered="True" />
+          <Statement FileIndex="12" Line="16" Column="9" EndLine="16" EndColumn="53" Covered="True" />
+          <Statement FileIndex="12" Line="17" Column="5" EndLine="17" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestErroneousFile():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="11" Line="135" Column="5" EndLine="135" EndColumn="6" Covered="True" />
-          <Statement FileIndex="11" Line="136" Column="9" EndLine="136" EndColumn="66" Covered="True" />
-          <Statement FileIndex="11" Line="137" Column="9" EndLine="139" EndColumn="72" Covered="True" />
-          <Statement FileIndex="11" Line="141" Column="9" EndLine="141" EndColumn="95" Covered="True" />
-          <Statement FileIndex="11" Line="142" Column="5" EndLine="142" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="135" Column="5" EndLine="135" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="136" Column="9" EndLine="136" EndColumn="66" Covered="True" />
+          <Statement FileIndex="12" Line="137" Column="9" EndLine="139" EndColumn="72" Covered="True" />
+          <Statement FileIndex="12" Line="141" Column="9" EndLine="141" EndColumn="95" Covered="True" />
+          <Statement FileIndex="12" Line="142" Column="5" EndLine="142" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestIsEmpty():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
-          <Statement FileIndex="11" Line="45" Column="5" EndLine="45" EndColumn="6" Covered="True" />
-          <Statement FileIndex="11" Line="46" Column="9" EndLine="46" EndColumn="66" Covered="True" />
-          <Statement FileIndex="11" Line="47" Column="9" EndLine="49" EndColumn="62" Covered="True" />
-          <Statement FileIndex="11" Line="51" Column="9" EndLine="51" EndColumn="70" Covered="True" />
-          <Statement FileIndex="11" Line="52" Column="9" EndLine="52" EndColumn="43" Covered="True" />
-          <Statement FileIndex="11" Line="54" Column="9" EndLine="59" EndColumn="15" Covered="True" />
-          <Statement FileIndex="11" Line="60" Column="9" EndLine="60" EndColumn="66" Covered="True" />
-          <Statement FileIndex="11" Line="61" Column="9" EndLine="61" EndColumn="44" Covered="True" />
-          <Statement FileIndex="11" Line="62" Column="5" EndLine="62" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="45" Column="5" EndLine="45" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="46" Column="9" EndLine="46" EndColumn="66" Covered="True" />
+          <Statement FileIndex="12" Line="47" Column="9" EndLine="49" EndColumn="26" Covered="True" />
+          <Statement FileIndex="12" Line="51" Column="9" EndLine="51" EndColumn="70" Covered="True" />
+          <Statement FileIndex="12" Line="52" Column="9" EndLine="52" EndColumn="43" Covered="True" />
+          <Statement FileIndex="12" Line="54" Column="9" EndLine="59" EndColumn="16" Covered="True" />
+          <Statement FileIndex="12" Line="60" Column="9" EndLine="60" EndColumn="66" Covered="True" />
+          <Statement FileIndex="12" Line="61" Column="9" EndLine="61" EndColumn="44" Covered="True" />
+          <Statement FileIndex="12" Line="62" Column="5" EndLine="62" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestMultipleTranslations():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="11" Line="120" Column="5" EndLine="120" EndColumn="6" Covered="True" />
-          <Statement FileIndex="11" Line="121" Column="9" EndLine="121" EndColumn="66" Covered="True" />
-          <Statement FileIndex="11" Line="122" Column="9" EndLine="127" EndColumn="16" Covered="True" />
-          <Statement FileIndex="11" Line="129" Column="9" EndLine="129" EndColumn="70" Covered="True" />
-          <Statement FileIndex="11" Line="130" Column="9" EndLine="130" EndColumn="90" Covered="True" />
-          <Statement FileIndex="11" Line="131" Column="5" EndLine="131" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="120" Column="5" EndLine="120" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="121" Column="9" EndLine="121" EndColumn="66" Covered="True" />
+          <Statement FileIndex="12" Line="122" Column="9" EndLine="127" EndColumn="16" Covered="True" />
+          <Statement FileIndex="12" Line="129" Column="9" EndLine="129" EndColumn="70" Covered="True" />
+          <Statement FileIndex="12" Line="130" Column="9" EndLine="130" EndColumn="92" Covered="True" />
+          <Statement FileIndex="12" Line="131" Column="5" EndLine="131" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestNoTranslation():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="11" Line="93" Column="5" EndLine="93" EndColumn="6" Covered="True" />
-          <Statement FileIndex="11" Line="94" Column="9" EndLine="94" EndColumn="66" Covered="True" />
-          <Statement FileIndex="11" Line="95" Column="9" EndLine="97" EndColumn="62" Covered="True" />
-          <Statement FileIndex="11" Line="99" Column="9" EndLine="99" EndColumn="70" Covered="True" />
-          <Statement FileIndex="11" Line="100" Column="9" EndLine="100" EndColumn="83" Covered="True" />
-          <Statement FileIndex="11" Line="101" Column="5" EndLine="101" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="93" Column="5" EndLine="93" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="94" Column="9" EndLine="94" EndColumn="66" Covered="True" />
+          <Statement FileIndex="12" Line="95" Column="9" EndLine="97" EndColumn="26" Covered="True" />
+          <Statement FileIndex="12" Line="99" Column="9" EndLine="99" EndColumn="70" Covered="True" />
+          <Statement FileIndex="12" Line="100" Column="9" EndLine="100" EndColumn="64" Covered="True" />
+          <Statement FileIndex="12" Line="101" Column="5" EndLine="101" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestOneTranslation():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="11" Line="105" Column="5" EndLine="105" EndColumn="6" Covered="True" />
-          <Statement FileIndex="11" Line="106" Column="9" EndLine="106" EndColumn="66" Covered="True" />
-          <Statement FileIndex="11" Line="107" Column="9" EndLine="112" EndColumn="15" Covered="True" />
-          <Statement FileIndex="11" Line="114" Column="9" EndLine="114" EndColumn="70" Covered="True" />
-          <Statement FileIndex="11" Line="115" Column="9" EndLine="115" EndColumn="73" Covered="True" />
-          <Statement FileIndex="11" Line="116" Column="5" EndLine="116" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="105" Column="5" EndLine="105" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="106" Column="9" EndLine="106" EndColumn="66" Covered="True" />
+          <Statement FileIndex="12" Line="107" Column="9" EndLine="112" EndColumn="16" Covered="True" />
+          <Statement FileIndex="12" Line="114" Column="9" EndLine="114" EndColumn="70" Covered="True" />
+          <Statement FileIndex="12" Line="115" Column="9" EndLine="115" EndColumn="73" Covered="True" />
+          <Statement FileIndex="12" Line="116" Column="5" EndLine="116" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestReverseTranslation():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="11" Line="146" Column="5" EndLine="146" EndColumn="6" Covered="True" />
-          <Statement FileIndex="11" Line="147" Column="9" EndLine="147" EndColumn="66" Covered="True" />
-          <Statement FileIndex="11" Line="148" Column="9" EndLine="153" EndColumn="15" Covered="True" />
-          <Statement FileIndex="11" Line="155" Column="9" EndLine="155" EndColumn="70" Covered="True" />
-          <Statement FileIndex="11" Line="156" Column="9" EndLine="156" EndColumn="73" Covered="True" />
-          <Statement FileIndex="11" Line="157" Column="5" EndLine="157" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="146" Column="5" EndLine="146" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="147" Column="9" EndLine="147" EndColumn="66" Covered="True" />
+          <Statement FileIndex="12" Line="148" Column="9" EndLine="153" EndColumn="16" Covered="True" />
+          <Statement FileIndex="12" Line="155" Column="9" EndLine="155" EndColumn="70" Covered="True" />
+          <Statement FileIndex="12" Line="156" Column="9" EndLine="156" EndColumn="73" Covered="True" />
+          <Statement FileIndex="12" Line="157" Column="5" EndLine="157" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestTranslatorName():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="11" Line="33" Column="5" EndLine="33" EndColumn="6" Covered="True" />
-          <Statement FileIndex="11" Line="34" Column="9" EndLine="34" EndColumn="66" Covered="True" />
-          <Statement FileIndex="11" Line="35" Column="9" EndLine="37" EndColumn="31" Covered="True" />
-          <Statement FileIndex="11" Line="39" Column="9" EndLine="39" EndColumn="70" Covered="True" />
-          <Statement FileIndex="11" Line="40" Column="9" EndLine="40" EndColumn="48" Covered="True" />
-          <Statement FileIndex="11" Line="41" Column="5" EndLine="41" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="33" Column="5" EndLine="33" EndColumn="6" Covered="True" />
+          <Statement FileIndex="12" Line="34" Column="9" EndLine="34" EndColumn="66" Covered="True" />
+          <Statement FileIndex="12" Line="35" Column="9" EndLine="37" EndColumn="31" Covered="True" />
+          <Statement FileIndex="12" Line="39" Column="9" EndLine="39" EndColumn="70" Covered="True" />
+          <Statement FileIndex="12" Line="40" Column="9" EndLine="40" EndColumn="48" Covered="True" />
+          <Statement FileIndex="12" Line="41" Column="5" EndLine="41" EndColumn="6" Covered="True" />
         </Method>
       </Type>
       <Type Name="TranslatorLoaderTest" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
         <Method Name="TestEmptyFile():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="12" Line="7" Column="5" EndLine="7" EndColumn="6" Covered="True" />
-          <Statement FileIndex="12" Line="8" Column="9" EndLine="8" EndColumn="98" Covered="True" />
-          <Statement FileIndex="12" Line="9" Column="9" EndLine="9" EndColumn="74" Covered="True" />
-          <Statement FileIndex="12" Line="10" Column="5" EndLine="10" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="7" Column="5" EndLine="7" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="8" Column="9" EndLine="8" EndColumn="98" Covered="True" />
+          <Statement FileIndex="13" Line="9" Column="9" EndLine="9" EndColumn="55" Covered="True" />
+          <Statement FileIndex="13" Line="10" Column="5" EndLine="10" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestErroneousFile():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="12" Line="28" Column="5" EndLine="28" EndColumn="6" Covered="True" />
-          <Statement FileIndex="12" Line="29" Column="9" EndLine="29" EndColumn="102" Covered="True" />
-          <Statement FileIndex="12" Line="30" Column="9" EndLine="30" EndColumn="98" Covered="True" />
-          <Statement FileIndex="12" Line="31" Column="5" EndLine="31" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="28" Column="5" EndLine="28" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="29" Column="9" EndLine="29" EndColumn="102" Covered="True" />
+          <Statement FileIndex="13" Line="30" Column="9" EndLine="30" EndColumn="100" Covered="True" />
+          <Statement FileIndex="13" Line="31" Column="5" EndLine="31" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestMultipleTranslations():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="12" Line="21" Column="5" EndLine="21" EndColumn="6" Covered="True" />
-          <Statement FileIndex="12" Line="22" Column="9" EndLine="22" EndColumn="92" Covered="True" />
-          <Statement FileIndex="12" Line="23" Column="9" EndLine="23" EndColumn="110" Covered="True" />
-          <Statement FileIndex="12" Line="24" Column="5" EndLine="24" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="21" Column="5" EndLine="21" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="22" Column="9" EndLine="22" EndColumn="92" Covered="True" />
+          <Statement FileIndex="13" Line="23" Column="9" EndLine="23" EndColumn="112" Covered="True" />
+          <Statement FileIndex="13" Line="24" Column="5" EndLine="24" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestTranslatorName():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="12" Line="14" Column="5" EndLine="14" EndColumn="6" Covered="True" />
-          <Statement FileIndex="12" Line="15" Column="9" EndLine="15" EndColumn="97" Covered="True" />
-          <Statement FileIndex="12" Line="16" Column="9" EndLine="16" EndColumn="70" Covered="True" />
-          <Statement FileIndex="12" Line="17" Column="5" EndLine="17" EndColumn="6" Covered="True" />
-        </Method>
-      </Type>
-      <Type Name="TranslatorParserTest" CoveredStatements="32" TotalStatements="32" CoveragePercent="100">
-        <Type Name="&lt;&gt;c__DisplayClass4_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-          <Method Name="&lt;TestErroneousFile&gt;b__1():System.Object" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="13" Line="68" Column="50" EndLine="68" EndColumn="84" Covered="True" />
-          </Method>
-        </Type>
-        <Method Name="TestEmptyTranslatorName():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="13" Line="9" Column="5" EndLine="9" EndColumn="6" Covered="True" />
-          <Statement FileIndex="13" Line="10" Column="9" EndLine="10" EndColumn="66" Covered="True" />
-          <Statement FileIndex="13" Line="11" Column="9" EndLine="13" EndColumn="45" Covered="True" />
-          <Statement FileIndex="13" Line="15" Column="9" EndLine="15" EndColumn="82" Covered="True" />
-          <Statement FileIndex="13" Line="16" Column="9" EndLine="16" EndColumn="64" Covered="True" />
+          <Statement FileIndex="13" Line="14" Column="5" EndLine="14" EndColumn="6" Covered="True" />
+          <Statement FileIndex="13" Line="15" Column="9" EndLine="15" EndColumn="97" Covered="True" />
+          <Statement FileIndex="13" Line="16" Column="9" EndLine="16" EndColumn="72" Covered="True" />
           <Statement FileIndex="13" Line="17" Column="5" EndLine="17" EndColumn="6" Covered="True" />
         </Method>
+      </Type>
+      <Type Name="TranslatorParserTest" CoveredStatements="31" TotalStatements="31" CoveragePercent="100">
+        <Method Name="TestEmptyTranslatorName():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="14" Line="9" Column="5" EndLine="9" EndColumn="6" Covered="True" />
+          <Statement FileIndex="14" Line="10" Column="9" EndLine="10" EndColumn="66" Covered="True" />
+          <Statement FileIndex="14" Line="11" Column="9" EndLine="13" EndColumn="26" Covered="True" />
+          <Statement FileIndex="14" Line="15" Column="9" EndLine="15" EndColumn="82" Covered="True" />
+          <Statement FileIndex="14" Line="16" Column="9" EndLine="16" EndColumn="64" Covered="True" />
+          <Statement FileIndex="14" Line="17" Column="5" EndLine="17" EndColumn="6" Covered="True" />
+        </Method>
         <Method Name="TestErroneousFile():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="13" Line="61" Column="5" EndLine="61" EndColumn="6" Covered="True" />
-          <Statement FileIndex="13" Line="62" Column="9" EndLine="62" EndColumn="66" Covered="True" />
-          <Statement FileIndex="13" Line="63" Column="9" EndLine="65" EndColumn="69" Covered="True" />
-          <Statement FileIndex="13" Line="67" Column="9" EndLine="67" EndColumn="82" Covered="True" />
-          <Statement FileIndex="13" Line="68" Column="9" EndLine="68" EndColumn="86" Covered="True" />
-          <Statement FileIndex="13" Line="69" Column="5" EndLine="69" EndColumn="6" Covered="True" />
+          <Statement FileIndex="14" Line="61" Column="5" EndLine="61" EndColumn="6" Covered="True" />
+          <Statement FileIndex="14" Line="62" Column="9" EndLine="62" EndColumn="66" Covered="True" />
+          <Statement FileIndex="14" Line="63" Column="9" EndLine="65" EndColumn="61" Covered="True" />
+          <Statement FileIndex="14" Line="67" Column="9" EndLine="67" EndColumn="82" Covered="True" />
+          <Statement FileIndex="14" Line="68" Column="9" EndLine="68" EndColumn="78" Covered="True" />
+          <Statement FileIndex="14" Line="69" Column="5" EndLine="69" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestMultipleTranslations():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-          <Statement FileIndex="13" Line="45" Column="5" EndLine="45" EndColumn="6" Covered="True" />
-          <Statement FileIndex="13" Line="46" Column="9" EndLine="46" EndColumn="66" Covered="True" />
-          <Statement FileIndex="13" Line="47" Column="9" EndLine="49" EndColumn="81" Covered="True" />
-          <Statement FileIndex="13" Line="51" Column="9" EndLine="51" EndColumn="82" Covered="True" />
-          <Statement FileIndex="13" Line="52" Column="9" EndLine="55" EndColumn="11" Covered="True" />
-          <Statement FileIndex="13" Line="56" Column="9" EndLine="56" EndColumn="68" Covered="True" />
-          <Statement FileIndex="13" Line="57" Column="5" EndLine="57" EndColumn="6" Covered="True" />
+          <Statement FileIndex="14" Line="45" Column="5" EndLine="45" EndColumn="6" Covered="True" />
+          <Statement FileIndex="14" Line="46" Column="9" EndLine="46" EndColumn="66" Covered="True" />
+          <Statement FileIndex="14" Line="47" Column="9" EndLine="49" EndColumn="73" Covered="True" />
+          <Statement FileIndex="14" Line="51" Column="9" EndLine="51" EndColumn="82" Covered="True" />
+          <Statement FileIndex="14" Line="52" Column="9" EndLine="55" EndColumn="11" Covered="True" />
+          <Statement FileIndex="14" Line="56" Column="9" EndLine="56" EndColumn="68" Covered="True" />
+          <Statement FileIndex="14" Line="57" Column="5" EndLine="57" EndColumn="6" Covered="True" />
         </Method>
-        <Method Name="TestNoTranslations():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="13" Line="21" Column="5" EndLine="21" EndColumn="6" Covered="True" />
-          <Statement FileIndex="13" Line="22" Column="9" EndLine="22" EndColumn="66" Covered="True" />
-          <Statement FileIndex="13" Line="23" Column="9" EndLine="25" EndColumn="45" Covered="True" />
-          <Statement FileIndex="13" Line="27" Column="9" EndLine="27" EndColumn="82" Covered="True" />
-          <Statement FileIndex="13" Line="28" Column="9" EndLine="28" EndColumn="98" Covered="True" />
-          <Statement FileIndex="13" Line="29" Column="5" EndLine="29" EndColumn="6" Covered="True" />
+        <Method Name="TestNoTranslation():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="14" Line="21" Column="5" EndLine="21" EndColumn="6" Covered="True" />
+          <Statement FileIndex="14" Line="22" Column="9" EndLine="22" EndColumn="66" Covered="True" />
+          <Statement FileIndex="14" Line="23" Column="9" EndLine="25" EndColumn="26" Covered="True" />
+          <Statement FileIndex="14" Line="27" Column="9" EndLine="27" EndColumn="82" Covered="True" />
+          <Statement FileIndex="14" Line="28" Column="9" EndLine="28" EndColumn="62" Covered="True" />
+          <Statement FileIndex="14" Line="29" Column="5" EndLine="29" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestTranslatorName():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="13" Line="33" Column="5" EndLine="33" EndColumn="6" Covered="True" />
-          <Statement FileIndex="13" Line="34" Column="9" EndLine="34" EndColumn="66" Covered="True" />
-          <Statement FileIndex="13" Line="35" Column="9" EndLine="37" EndColumn="41" Covered="True" />
-          <Statement FileIndex="13" Line="39" Column="9" EndLine="39" EndColumn="82" Covered="True" />
-          <Statement FileIndex="13" Line="40" Column="9" EndLine="40" EndColumn="59" Covered="True" />
-          <Statement FileIndex="13" Line="41" Column="5" EndLine="41" EndColumn="6" Covered="True" />
+          <Statement FileIndex="14" Line="33" Column="5" EndLine="33" EndColumn="6" Covered="True" />
+          <Statement FileIndex="14" Line="34" Column="9" EndLine="34" EndColumn="66" Covered="True" />
+          <Statement FileIndex="14" Line="35" Column="9" EndLine="37" EndColumn="33" Covered="True" />
+          <Statement FileIndex="14" Line="39" Column="9" EndLine="39" EndColumn="82" Covered="True" />
+          <Statement FileIndex="14" Line="40" Column="9" EndLine="40" EndColumn="59" Covered="True" />
+          <Statement FileIndex="14" Line="41" Column="5" EndLine="41" EndColumn="6" Covered="True" />
         </Method>
       </Type>
-      <Type Name="TranslatorTest" CoveredStatements="21" TotalStatements="21" CoveragePercent="100">
+      <Type Name="TranslatorTest" CoveredStatements="26" TotalStatements="26" CoveragePercent="100">
         <Method Name="TestIsEmpty():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="14" Line="14" Column="5" EndLine="14" EndColumn="6" Covered="True" />
-          <Statement FileIndex="14" Line="15" Column="9" EndLine="15" EndColumn="50" Covered="True" />
-          <Statement FileIndex="14" Line="16" Column="9" EndLine="16" EndColumn="43" Covered="True" />
-          <Statement FileIndex="14" Line="17" Column="9" EndLine="17" EndColumn="56" Covered="True" />
-          <Statement FileIndex="14" Line="18" Column="9" EndLine="18" EndColumn="44" Covered="True" />
-          <Statement FileIndex="14" Line="19" Column="5" EndLine="19" EndColumn="6" Covered="True" />
+          <Statement FileIndex="15" Line="14" Column="5" EndLine="14" EndColumn="6" Covered="True" />
+          <Statement FileIndex="15" Line="15" Column="9" EndLine="15" EndColumn="50" Covered="True" />
+          <Statement FileIndex="15" Line="16" Column="9" EndLine="16" EndColumn="43" Covered="True" />
+          <Statement FileIndex="15" Line="17" Column="9" EndLine="17" EndColumn="56" Covered="True" />
+          <Statement FileIndex="15" Line="18" Column="9" EndLine="18" EndColumn="44" Covered="True" />
+          <Statement FileIndex="15" Line="19" Column="5" EndLine="19" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestMultipleTranslations():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="14" Line="31" Column="5" EndLine="31" EndColumn="6" Covered="True" />
-          <Statement FileIndex="14" Line="32" Column="9" EndLine="32" EndColumn="50" Covered="True" />
-          <Statement FileIndex="14" Line="33" Column="9" EndLine="33" EndColumn="56" Covered="True" />
-          <Statement FileIndex="14" Line="34" Column="9" EndLine="34" EndColumn="56" Covered="True" />
-          <Statement FileIndex="14" Line="35" Column="9" EndLine="35" EndColumn="90" Covered="True" />
-          <Statement FileIndex="14" Line="36" Column="5" EndLine="36" EndColumn="6" Covered="True" />
+          <Statement FileIndex="15" Line="31" Column="5" EndLine="31" EndColumn="6" Covered="True" />
+          <Statement FileIndex="15" Line="32" Column="9" EndLine="32" EndColumn="50" Covered="True" />
+          <Statement FileIndex="15" Line="33" Column="9" EndLine="33" EndColumn="56" Covered="True" />
+          <Statement FileIndex="15" Line="34" Column="9" EndLine="34" EndColumn="56" Covered="True" />
+          <Statement FileIndex="15" Line="35" Column="9" EndLine="35" EndColumn="92" Covered="True" />
+          <Statement FileIndex="15" Line="36" Column="5" EndLine="36" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestOneTranslation():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="14" Line="23" Column="5" EndLine="23" EndColumn="6" Covered="True" />
-          <Statement FileIndex="14" Line="24" Column="9" EndLine="24" EndColumn="50" Covered="True" />
-          <Statement FileIndex="14" Line="25" Column="9" EndLine="25" EndColumn="56" Covered="True" />
-          <Statement FileIndex="14" Line="26" Column="9" EndLine="26" EndColumn="73" Covered="True" />
-          <Statement FileIndex="14" Line="27" Column="5" EndLine="27" EndColumn="6" Covered="True" />
+          <Statement FileIndex="15" Line="23" Column="5" EndLine="23" EndColumn="6" Covered="True" />
+          <Statement FileIndex="15" Line="24" Column="9" EndLine="24" EndColumn="50" Covered="True" />
+          <Statement FileIndex="15" Line="25" Column="9" EndLine="25" EndColumn="56" Covered="True" />
+          <Statement FileIndex="15" Line="26" Column="9" EndLine="26" EndColumn="82" Covered="True" />
+          <Statement FileIndex="15" Line="27" Column="5" EndLine="27" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name="TestReverseTranslation():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="15" Line="40" Column="5" EndLine="40" EndColumn="6" Covered="True" />
+          <Statement FileIndex="15" Line="41" Column="9" EndLine="41" EndColumn="50" Covered="True" />
+          <Statement FileIndex="15" Line="42" Column="9" EndLine="42" EndColumn="56" Covered="True" />
+          <Statement FileIndex="15" Line="43" Column="9" EndLine="43" EndColumn="82" Covered="True" />
+          <Statement FileIndex="15" Line="44" Column="5" EndLine="44" EndColumn="6" Covered="True" />
         </Method>
         <Method Name="TestTranslatorName():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="14" Line="7" Column="5" EndLine="7" EndColumn="6" Covered="True" />
-          <Statement FileIndex="14" Line="8" Column="9" EndLine="8" EndColumn="50" Covered="True" />
-          <Statement FileIndex="14" Line="9" Column="9" EndLine="9" EndColumn="48" Covered="True" />
-          <Statement FileIndex="14" Line="10" Column="5" EndLine="10" EndColumn="6" Covered="True" />
+          <Statement FileIndex="15" Line="7" Column="5" EndLine="7" EndColumn="6" Covered="True" />
+          <Statement FileIndex="15" Line="8" Column="9" EndLine="8" EndColumn="50" Covered="True" />
+          <Statement FileIndex="15" Line="9" Column="9" EndLine="9" EndColumn="48" Covered="True" />
+          <Statement FileIndex="15" Line="10" Column="5" EndLine="10" EndColumn="6" Covered="True" />
         </Method>
       </Type>
     </Namespace>

@@ -7,7 +7,7 @@ public class Translator
 
     public Translator(string name)
     {
-        _translations = new Dictionary<string, List<string>>();
+        _translations = [];
         Name = name;
     }
 
@@ -33,13 +33,13 @@ public class Translator
     {
         if (_translations.TryGetValue(word, out var translations))
         {
-            return translations.ToArray();
+            return [.. translations];
         }
 
         // Try reverse translation
-        return (from t in _translations
-                where t.Value.Contains(word)
-                select t.Key).ToArray();
+        return [.. from t in _translations
+                   where t.Value.Contains(word)
+                   select t.Key];
     }
 
     public bool IsEmpty() => _translations.Count == 0;

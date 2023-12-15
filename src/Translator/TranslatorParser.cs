@@ -2,8 +2,11 @@
 
 namespace Translator;
 
-public class TranslatorParser(ITranslatorLoader loader) : ITranslatorParser
+public partial class TranslatorParser(ITranslatorLoader loader) : ITranslatorParser
 {
+    [GeneratedRegex(@"^(?<key>\w+) \= (?<value>\w+)$")]
+    private static partial Regex TranslatorRegex();
+
     private readonly string[] _lines = loader.GetLines();
 
     public string GetName() => _lines.Length > 0 ? _lines[0] : string.Empty;
@@ -12,31 +15,33 @@ public class TranslatorParser(ITranslatorLoader loader) : ITranslatorParser
     {
         var translator = new Dictionary<string, List<string>>();
 
-        if (_lines.Length > 1)
+        if (_lines.Length <= 1)
         {
-            var regex = new Regex(@"^(?<key>\w+) \= (?<value>\w+)$");
+            return translator;
+        }
 
-            for (var i = 1; i < _lines.Length; i++)
+        var regex = TranslatorRegex();
+
+        for (var i = 1; i < _lines.Length; i++)
+        {
+            var line = _lines[i];
+            var match = regex.Match(line);
+
+            if (!match.Success)
             {
-                var line = _lines[i];
-                var match = regex.Match(line);
+                throw new TranslatorException("The file is erroneous.");
+            }
 
-                if (!match.Success)
-                {
-                    throw new TranslatorException("The file is erroneous.");
-                }
+            var key = match.Groups["key"].Value;
+            var value = match.Groups["value"].Value;
 
-                var key = match.Groups["key"].Value;
-                var value = match.Groups["value"].Value;
-
-                if (translator.TryGetValue(key, out var translations))
-                {
-                    translations.Add(value);
-                }
-                else
-                {
-                    translator.Add(key, [value]);
-                }
+            if (translator.TryGetValue(key, out var translations))
+            {
+                translations.Add(value);
+            }
+            else
+            {
+                translator.Add(key, [value]);
             }
         }
 

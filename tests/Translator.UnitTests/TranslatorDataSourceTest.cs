@@ -17,15 +17,15 @@ public class TranslatorDataSourceTest
     }
 
     [Fact]
-    public void TestEmptyFileTranslations()
+    public void TestEmptyFile()
     {
         var mockTranslatorParser = new Mock<ITranslatorParser>();
         mockTranslatorParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, List<string>>());
+            .Returns([]);
 
         var translator = new Translator(mockTranslatorParser.Object);
-        Assert.Equal(Array.Empty<string>(), translator.GetTranslation("against"));
+        Assert.Equal([], translator.GetTranslation("against"));
     }
 
     [Fact]
@@ -46,17 +46,17 @@ public class TranslatorDataSourceTest
         var mockTranslatorParser = new Mock<ITranslatorParser>();
         mockTranslatorParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, List<string>>());
+            .Returns([]);
 
         var translator = new Translator(mockTranslatorParser.Object);
         Assert.True(translator.IsEmpty());
 
         mockTranslatorParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, List<string>> {
-                    {"against", ["contre", "against"] }
-                }
-            );
+            .Returns(new Dictionary<string, List<string>>
+            {
+                    {"against", ["contre"] }
+            });
         translator = new Translator(mockTranslatorParser.Object);
         Assert.False(translator.IsEmpty());
     }
@@ -67,11 +67,11 @@ public class TranslatorDataSourceTest
         var mockTranslatorParser = new Mock<ITranslatorParser>();
         mockTranslatorParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, List<string>>());
+            .Returns([]);
 
         var translator = new Translator(mockTranslatorParser.Object);
         translator.AddTranslation("against", "contre");
-        Assert.Equal(new[] { "contre" }, translator.GetTranslation("against"));
+        Assert.Equal<string[]>(["contre"], translator.GetTranslation("against"));
     }
 
     [Fact]
@@ -80,12 +80,12 @@ public class TranslatorDataSourceTest
         var mockTranslatorParser = new Mock<ITranslatorParser>();
         mockTranslatorParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, List<string>>());
+            .Returns([]);
 
         var translator = new Translator(mockTranslatorParser.Object);
         translator.AddTranslation("against", "contre");
         translator.AddTranslation("against", "versus");
-        Assert.Equal(new[] { "contre", "versus" }, translator.GetTranslation("against"));
+        Assert.Equal<string[]>(["contre", "versus"], translator.GetTranslation("against"));
     }
 
     [Fact]
@@ -94,10 +94,10 @@ public class TranslatorDataSourceTest
         var mockTranslatorParser = new Mock<ITranslatorParser>();
         mockTranslatorParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, List<string>>());
+            .Returns([]);
 
         var translator = new Translator(mockTranslatorParser.Object);
-        Assert.Equal(Array.Empty<string>(), translator.GetTranslation("against"));
+        Assert.Equal([], translator.GetTranslation("against"));
     }
 
     [Fact]
@@ -106,10 +106,10 @@ public class TranslatorDataSourceTest
         var mockTranslatorParser = new Mock<ITranslatorParser>();
         mockTranslatorParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, List<string>> {
-                    {"against", ["contre", "against"] }
-                }
-            );
+            .Returns(new Dictionary<string, List<string>>
+            {
+                    {"against", ["contre"] }
+            });
 
         var translator = new Translator(mockTranslatorParser.Object);
         Assert.Equal("contre", translator.GetTranslation("against")[0]);
@@ -127,7 +127,7 @@ public class TranslatorDataSourceTest
             });
 
         var translator = new Translator(mockTranslatorParser.Object);
-        Assert.Equal(new[] { "contre", "versus" }, translator.GetTranslation("against"));
+        Assert.Equal<string[]>(["contre", "versus"], translator.GetTranslation("against"));
     }
 
     [Fact]
@@ -147,10 +147,10 @@ public class TranslatorDataSourceTest
         var mockTranslatorParser = new Mock<ITranslatorParser>();
         mockTranslatorParser
             .Setup(dp => dp.GetTranslations())
-            .Returns(new Dictionary<string, List<string>> {
-                    {"against", ["contre", "against"] }
-                }
-            );
+            .Returns(new Dictionary<string, List<string>>
+            {
+                    {"against", ["contre"] }
+            });
 
         var translator = new Translator(mockTranslatorParser.Object);
         Assert.Equal("against", translator.GetTranslation("contre")[0]);

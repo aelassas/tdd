@@ -23,7 +23,7 @@ public class TranslatorTest
     {
         var translator = new Translator("en-fr");
         translator.AddTranslation("against", "contre");
-        Assert.Equal("contre", translator.GetTranslation("against")[0]);
+        Assert.Equal<string[]>(["contre"], translator.GetTranslation("against"));
     }
 
     [Fact]
@@ -32,6 +32,14 @@ public class TranslatorTest
         var translator = new Translator("en-fr");
         translator.AddTranslation("against", "contre");
         translator.AddTranslation("against", "versus");
-        Assert.Equal(new[] { "contre", "versus" }, translator.GetTranslation("against"));
+        Assert.Equal<string[]>(["contre", "versus"], translator.GetTranslation("against"));
+    }
+
+    [Fact]
+    public void TestReverseTranslation()
+    {
+        var translator = new Translator("en-fr");
+        translator.AddTranslation("against", "contre");
+        Assert.Equal<string[]>(["against"], translator.GetTranslation("contre"));
     }
 }
