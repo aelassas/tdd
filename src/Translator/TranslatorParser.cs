@@ -4,7 +4,7 @@ namespace Translator;
 
 public partial class TranslatorParser(ITranslatorLoader loader) : ITranslatorParser
 {
-    [GeneratedRegex(@"^(?<key>\w+)\s=\s(?<value>\w+)$")]
+    [GeneratedRegex(@"^(?<key>\w+) = (?<value>\w+)$")]
     private static partial Regex TranslatorRegex();
 
     private readonly string[] _lines = loader.GetLines();

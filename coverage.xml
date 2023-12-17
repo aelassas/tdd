@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Root CoveredStatements="215" TotalStatements="215" CoveragePercent="100" ReportType="DetailedXml" DotCoverVersion="2023.3">
   <FileIndices>
-    <File Index="1" Name="C:\dev\tdd\src\src\Translator\ITranslatorLoader.cs" ChecksumAlgorithm="SHA256" Checksum="0E59258BE8AA93D943312D5F8448EAF2A2F3428E91A06426ECBDA7B9228382FD" />
-    <File Index="2" Name="C:\dev\tdd\src\src\Translator\ITranslatorParser.cs" ChecksumAlgorithm="SHA256" Checksum="615792F9880EBA2ACA0797170F422F1ED797E31393F4AD44F8AACE6BB9E519B3" />
-    <File Index="3" Name="C:\dev\tdd\src\src\Translator\Translator.cs" ChecksumAlgorithm="SHA256" Checksum="C24156A6FA552F1BAE4991AA49F7B7D1A1277C9EA54C9A4EEB76B098F847407E" />
-    <File Index="4" Name="C:\dev\tdd\src\src\Translator\TranslatorException.cs" ChecksumAlgorithm="SHA256" Checksum="A0B1F00B924C46596ECAC13E0F8059C2C1B88702599BCA2E7108E6AA398E6EF4" />
-    <File Index="5" Name="C:\dev\tdd\src\src\Translator\TranslatorLoader.cs" ChecksumAlgorithm="SHA256" Checksum="753B0EBC8E188D22237E1340A423DA4463AF413CBCB6B4475FFDE2FC0BEB6796" />
-    <File Index="6" Name="C:\dev\tdd\src\src\Translator\TranslatorParser.cs" ChecksumAlgorithm="SHA256" Checksum="84B00299ABBCD47DAF4CD1569A242E4C6DCCD914D415818E476B8C4564E73F99" />
-    <File Index="7" Name="C:\dev\tdd\src\src\Translator\obj\Debug\net8.0\Translator.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
+    <File Index="10" Name="C:\dev\tdd\src\src\Translator\System.Text.RegularExpressions.Generator\System.Text.RegularExpressions.Generator.RegexGenerator\RegexGenerator.g.cs" ChecksumAlgorithm="SHA1" Checksum="AE02415414BAB7F8D01D08BE9E96870161F44E28" />
+    <File Index="9" Name="C:\dev\tdd\src\src\Translator\obj\Debug\net8.0\Translator.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="B43552F2E6DCEC6650ABFD79BA0E6E9A2800A961B35BA19632589E53B9D41598" />
     <File Index="8" Name="C:\dev\tdd\src\src\Translator\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="F7A5D9789C863625E139FF99E1113A503830F6B85A88F6129916DF83AC76B49E" />
-    <File Index="9" Name="C:\dev\tdd\src\src\Translator\obj\Debug\net8.0\Translator.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="E6B18DFB03E009FE205BBF1F6AAA8A6E6F19C4CB171A4E1232A234A15039BA09" />
-    <File Index="10" Name="C:\dev\tdd\src\src\Translator\System.Text.RegularExpressions.Generator\System.Text.RegularExpressions.Generator.RegexGenerator\RegexGenerator.g.cs" ChecksumAlgorithm="SHA1" Checksum="918C49D6B2190A1900B7F449F35DB8CA607BEF51" />
-    <File Index="11" Name="C:\dev\tdd\src\tests\Translator.UnitTests\GlobalUsings.cs" ChecksumAlgorithm="SHA256" Checksum="E8DE9B91579BA661CBFEBD3912328C2DC917D2A519CC565B717446C7F39E6D33" />
-    <File Index="12" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorDataSourceTest.cs" ChecksumAlgorithm="SHA256" Checksum="7448A921FF3D655BD1933AEEDFA14BB72ACBCC3A7B15FA6473A6D857ED219996" />
-    <File Index="13" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorLoaderTest.cs" ChecksumAlgorithm="SHA256" Checksum="B79075D3CC9E3820C09DA610D06D2DD8EBAB64EE1BF8EAA31B97CCF616EDB800" />
-    <File Index="14" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorParserTest.cs" ChecksumAlgorithm="SHA256" Checksum="91549EC8E34BE90A6C31650A813FE33D40FA04E6DCB2375B9595BF7A6B591D95" />
-    <File Index="15" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorTest.cs" ChecksumAlgorithm="SHA256" Checksum="8AD00706F1887A66768F8AA96712357DE8BFE1CE397CBD042E622C7BF1210696" />
-    <File Index="16" Name="C:\Users\aelassas\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
-    <File Index="17" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\Translator.UnitTests.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
+    <File Index="7" Name="C:\dev\tdd\src\src\Translator\obj\Debug\net8.0\Translator.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
+    <File Index="6" Name="C:\dev\tdd\src\src\Translator\TranslatorParser.cs" ChecksumAlgorithm="SHA256" Checksum="A4E258201CFB8F3997131EB2AD0F565C9335A8A2E546D99DC0529EF09906A3AD" />
+    <File Index="5" Name="C:\dev\tdd\src\src\Translator\TranslatorLoader.cs" ChecksumAlgorithm="SHA256" Checksum="753B0EBC8E188D22237E1340A423DA4463AF413CBCB6B4475FFDE2FC0BEB6796" />
+    <File Index="4" Name="C:\dev\tdd\src\src\Translator\TranslatorException.cs" ChecksumAlgorithm="SHA256" Checksum="A0B1F00B924C46596ECAC13E0F8059C2C1B88702599BCA2E7108E6AA398E6EF4" />
+    <File Index="3" Name="C:\dev\tdd\src\src\Translator\Translator.cs" ChecksumAlgorithm="SHA256" Checksum="C24156A6FA552F1BAE4991AA49F7B7D1A1277C9EA54C9A4EEB76B098F847407E" />
+    <File Index="2" Name="C:\dev\tdd\src\src\Translator\ITranslatorParser.cs" ChecksumAlgorithm="SHA256" Checksum="615792F9880EBA2ACA0797170F422F1ED797E31393F4AD44F8AACE6BB9E519B3" />
+    <File Index="1" Name="C:\dev\tdd\src\src\Translator\ITranslatorLoader.cs" ChecksumAlgorithm="SHA256" Checksum="0E59258BE8AA93D943312D5F8448EAF2A2F3428E91A06426ECBDA7B9228382FD" />
+    <File Index="19" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\Translator.UnitTests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="A6F7FE0ADE09D1ACC8D8793C65094A678EC5D7B093C47E087A658BC3C3050D7E" />
     <File Index="18" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="F7A5D9789C863625E139FF99E1113A503830F6B85A88F6129916DF83AC76B49E" />
-    <File Index="19" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\Translator.UnitTests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="25910D24F839C3FADBA3C4975122990392F4BE70FB926AAF3E20239619908C9E" />
+    <File Index="17" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\Translator.UnitTests.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
+    <File Index="16" Name="C:\Users\aelassas\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
+    <File Index="15" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorTest.cs" ChecksumAlgorithm="SHA256" Checksum="8AD00706F1887A66768F8AA96712357DE8BFE1CE397CBD042E622C7BF1210696" />
+    <File Index="14" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorParserTest.cs" ChecksumAlgorithm="SHA256" Checksum="91549EC8E34BE90A6C31650A813FE33D40FA04E6DCB2375B9595BF7A6B591D95" />
+    <File Index="13" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorLoaderTest.cs" ChecksumAlgorithm="SHA256" Checksum="B79075D3CC9E3820C09DA610D06D2DD8EBAB64EE1BF8EAA31B97CCF616EDB800" />
+    <File Index="12" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorDataSourceTest.cs" ChecksumAlgorithm="SHA256" Checksum="7448A921FF3D655BD1933AEEDFA14BB72ACBCC3A7B15FA6473A6D857ED219996" />
+    <File Index="11" Name="C:\dev\tdd\src\tests\Translator.UnitTests\GlobalUsings.cs" ChecksumAlgorithm="SHA256" Checksum="E8DE9B91579BA661CBFEBD3912328C2DC917D2A519CC565B717446C7F39E6D33" />
   </FileIndices>
   <Assembly Name="Translator" CoveredStatements="63" TotalStatements="63" CoveragePercent="100">
     <Namespace Name="Translator" CoveredStatements="63" TotalStatements="63" CoveragePercent="100">
