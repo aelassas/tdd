@@ -6,11 +6,11 @@
     <File Index="3" Name="C:\dev\tdd\src\src\Translator\Translator.cs" ChecksumAlgorithm="SHA256" Checksum="C24156A6FA552F1BAE4991AA49F7B7D1A1277C9EA54C9A4EEB76B098F847407E" />
     <File Index="4" Name="C:\dev\tdd\src\src\Translator\TranslatorException.cs" ChecksumAlgorithm="SHA256" Checksum="A0B1F00B924C46596ECAC13E0F8059C2C1B88702599BCA2E7108E6AA398E6EF4" />
     <File Index="5" Name="C:\dev\tdd\src\src\Translator\TranslatorLoader.cs" ChecksumAlgorithm="SHA256" Checksum="753B0EBC8E188D22237E1340A423DA4463AF413CBCB6B4475FFDE2FC0BEB6796" />
-    <File Index="6" Name="C:\dev\tdd\src\src\Translator\TranslatorParser.cs" ChecksumAlgorithm="SHA256" Checksum="8745E4911DC642346657DFE339FA8A5A11931A021471EB550437852986383496" />
+    <File Index="6" Name="C:\dev\tdd\src\src\Translator\TranslatorParser.cs" ChecksumAlgorithm="SHA256" Checksum="086A0F1A4E468FEEAE7C25DD4025CCC0FA29CEEC4534D6A76D68F0A3B7AB59A8" />
     <File Index="7" Name="C:\dev\tdd\src\src\Translator\obj\Debug\net8.0\Translator.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
     <File Index="8" Name="C:\dev\tdd\src\src\Translator\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="F7A5D9789C863625E139FF99E1113A503830F6B85A88F6129916DF83AC76B49E" />
-    <File Index="9" Name="C:\dev\tdd\src\src\Translator\obj\Debug\net8.0\Translator.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="BC43D0AD0F6A7438E2CEBFA671A739FF8D6283CB0612A3F8E4C0A62D9D100C1A" />
-    <File Index="10" Name="C:\dev\tdd\src\src\Translator\System.Text.RegularExpressions.Generator\System.Text.RegularExpressions.Generator.RegexGenerator\RegexGenerator.g.cs" ChecksumAlgorithm="SHA1" Checksum="D07F9AB5B7580EECBC49FDF87DB2EC3BEBE4C900" />
+    <File Index="9" Name="C:\dev\tdd\src\src\Translator\obj\Debug\net8.0\Translator.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="F6159C30ABCECF2A41FECDEC43C9695E7035E9F0B9E3B421ACCAC25B0FC269E7" />
+    <File Index="10" Name="C:\dev\tdd\src\src\Translator\System.Text.RegularExpressions.Generator\System.Text.RegularExpressions.Generator.RegexGenerator\RegexGenerator.g.cs" ChecksumAlgorithm="SHA1" Checksum="83D2ADC5355DDAEE66BDF7B4D03EC1B4D11E7623" />
     <File Index="11" Name="C:\dev\tdd\src\tests\Translator.UnitTests\GlobalUsings.cs" ChecksumAlgorithm="SHA256" Checksum="E8DE9B91579BA661CBFEBD3912328C2DC917D2A519CC565B717446C7F39E6D33" />
     <File Index="12" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorDataSourceTest.cs" ChecksumAlgorithm="SHA256" Checksum="7448A921FF3D655BD1933AEEDFA14BB72ACBCC3A7B15FA6473A6D857ED219996" />
     <File Index="13" Name="C:\dev\tdd\src\tests\Translator.UnitTests\TranslatorLoaderTest.cs" ChecksumAlgorithm="SHA256" Checksum="B79075D3CC9E3820C09DA610D06D2DD8EBAB64EE1BF8EAA31B97CCF616EDB800" />
@@ -19,7 +19,7 @@
     <File Index="16" Name="C:\Users\aelassas\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
     <File Index="17" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\Translator.UnitTests.GlobalUsings.g.cs" ChecksumAlgorithm="SHA256" Checksum="F3F134E9E825E3E7268090F58B1AF2BDA2DE513F61A09C56F48B9B8D08612ABC" />
     <File Index="18" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="F7A5D9789C863625E139FF99E1113A503830F6B85A88F6129916DF83AC76B49E" />
-    <File Index="19" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\Translator.UnitTests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="5D11BEB5949333F600F8715683BF46FB3198BDD8A732E8FAAEAFDABC058A3053" />
+    <File Index="19" Name="C:\dev\tdd\src\tests\Translator.UnitTests\obj\Debug\net8.0\Translator.UnitTests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="A5BF5B4CE77701E20E628B16E3A2AA92A0357C64A12B0F6229F08808678049FF" />
   </FileIndices>
   <Assembly Name="Translator" CoveredStatements="63" TotalStatements="63" CoveragePercent="100">
     <Namespace Name="Translator" CoveredStatements="63" TotalStatements="63" CoveragePercent="100">
