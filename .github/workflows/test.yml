@@ -24,4 +24,4 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           file: coverage.cobertura.xml
-          directory: tests/Translator.UnitTests
+          directory: ./tests/Translator.UnitTests
