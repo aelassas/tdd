@@ -5,8 +5,6 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Translator", "src\Translator\Translator.csproj", "{52139E0B-76D9-4A6E-8812-637FC3AA900C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Translator.UnitTests", "tests\Translator.UnitTests\Translator.UnitTests.csproj", "{9F343BBB-F64E-4C69-81F3-034AC63D7601}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5D76365D-C61A-4EB7-9487-AE5A120FBEAD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5FE0CDB1-C4BF-4A8C-A5DF-4623C2191BB8}"
@@ -15,8 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{27AA1641-D
 	ProjectSection(SolutionItems) = preProject
 		data\translator-empty.txt = data\translator-empty.txt
 		data\translator-erroneous.txt = data\translator-erroneous.txt
-		data\translator.txt = data\translator.txt
 		data\translator-name.txt = data\translator-name.txt
+		data\translator.txt = data\translator.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "global", "global", "{F8C0CF9F-5BDC-44E2-A941-12C3633C257C}"
@@ -34,6 +32,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\test.yml = .github\workflows\test.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Translator.UnitTests", "tests\Translator.UnitTests\Translator.UnitTests.csproj", "{6F9F0448-6AB1-424C-8EA8-D1B1A93FC3E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,18 +44,18 @@ Global
 		{52139E0B-76D9-4A6E-8812-637FC3AA900C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52139E0B-76D9-4A6E-8812-637FC3AA900C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52139E0B-76D9-4A6E-8812-637FC3AA900C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9F343BBB-F64E-4C69-81F3-034AC63D7601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F343BBB-F64E-4C69-81F3-034AC63D7601}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F343BBB-F64E-4C69-81F3-034AC63D7601}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F343BBB-F64E-4C69-81F3-034AC63D7601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F9F0448-6AB1-424C-8EA8-D1B1A93FC3E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F9F0448-6AB1-424C-8EA8-D1B1A93FC3E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F9F0448-6AB1-424C-8EA8-D1B1A93FC3E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F9F0448-6AB1-424C-8EA8-D1B1A93FC3E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{52139E0B-76D9-4A6E-8812-637FC3AA900C} = {5D76365D-C61A-4EB7-9487-AE5A120FBEAD}
-		{9F343BBB-F64E-4C69-81F3-034AC63D7601} = {5FE0CDB1-C4BF-4A8C-A5DF-4623C2191BB8}
 		{8507BD5C-4414-427A-B643-2C985C3C50AF} = {125A5AA8-993C-454A-9307-6283CF5AAF34}
+		{6F9F0448-6AB1-424C-8EA8-D1B1A93FC3E2} = {5FE0CDB1-C4BF-4A8C-A5DF-4623C2191BB8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9524A492-B719-4E0A-817F-6D0F639F1516}

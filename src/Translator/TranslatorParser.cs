@@ -2,10 +2,9 @@
 
 namespace Translator;
 
-public partial class TranslatorParser(ITranslatorLoader loader) : ITranslatorParser
+public class TranslatorParser(ITranslatorLoader loader) : ITranslatorParser
 {
-    [GeneratedRegex(@"^(?<key>\w+) = (?<value>\w+)$")]
-    private static partial Regex TranslatorRegex();
+    private static readonly Regex TranslatorRegex = new(@"^(?<key>\w+) = (?<value>\w+)$");
 
     private readonly string[] _lines = loader.GetLines();
 
@@ -20,12 +19,10 @@ public partial class TranslatorParser(ITranslatorLoader loader) : ITranslatorPar
             return translator;
         }
 
-        var regex = TranslatorRegex();
-
         for (var i = 1; i < _lines.Length; i++)
         {
             var line = _lines[i];
-            var match = regex.Match(line);
+            var match = TranslatorRegex.Match(line);
 
             if (!match.Success)
             {

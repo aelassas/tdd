@@ -353,3 +353,7 @@ MigrationBackup/
 /**/appsettings.Local.json
 
 *.exe
+
+# coverlet
+coverage.cobertura.xml
+/coveragereport
