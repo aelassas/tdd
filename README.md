@@ -1099,10 +1099,10 @@ TDD provides additional benefits because developers think about software in term
 *   3<sup>rd</sup> March, 2024
     *   Updated _TranslatorParser.cs_
     *   Updated [Test CI workflow](https://github.com/aelassas/tdd/blob/main/.github/workflows/test.yml)
-    *   Added coverlet.msbuild
-    *   Removed coverlet.collector
-    *   Bump Microsoft.NET.Test.Sdk from 17.8.0 to 17.9.0
-    *   Bump xunit from 2.6.3 to 2.7.0
-    *   Bump xunit.runner.visualstudio from 2.5.5 to 2.5.7
+    *   Added `coverlet.msbuild`
+    *   Removed `coverlet.collector`
+    *   Bump `Microsoft.NET.Test.Sdk` from 17.8.0 to 17.9.0
+    *   Bump `xunit` from 2.6.3 to 2.7.0
+    *   Bump `xunit.runner.visualstudio` from 2.5.5 to 2.5.7
 
 </span></div>
