@@ -1095,7 +1095,8 @@ TDD provides additional benefits because developers think about software in term
 
 ## <a id="history" name="history">History</a>
 
-*   12<sup>th</sup> December, 2023 - Initial release
+*   12<sup>th</sup> December, 2023
+    *   Initial release
 *   3<sup>rd</sup> March, 2024
     *   Updated _TranslatorParser.cs_
     *   Updated [Test CI workflow](https://github.com/aelassas/tdd/blob/main/.github/workflows/test.yml)
