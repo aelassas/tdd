@@ -1105,5 +1105,5 @@ TDD provides additional benefits because developers think about software in term
     *   Bump `Microsoft.NET.Test.Sdk` from 17.8.0 to 17.9.0
     *   Bump `xunit` from 2.6.3 to 2.7.0
     *   Bump `xunit.runner.visualstudio` from 2.5.5 to 2.5.7
-
-</span></div>
+*   23<sup>rd</sup> March, 2024
+    *   Bump `coverlet.msbuild` from 6.0.1 to 6.0.2
