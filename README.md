@@ -969,8 +969,9 @@ Now, if we run the test again, we'll see that it passes.
 
 Now, let's use the following text file (_translator-name.txt_):
 
-```cs
-
+```
+en-fr
+```
 
 Let's start by writing the test:
 
