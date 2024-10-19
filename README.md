@@ -21,7 +21,6 @@ This project was originally posted on [CodeProject](https://www.codeproject.com/
 12.  [Running the Source Code](#run-src)
 13.  [Is TDD a Time Waster?](#tdd-time-waster)
 14.  [Conclusion](#conclusion)
-15.  [History](#history)
 
 ## <a id="intro" name="intro">Introduction</a>
 
@@ -1092,20 +1091,3 @@ We can notice with TDD:
 TDD is very useful when the code is continuously improved.
 
 TDD provides additional benefits because developers think about software in terms of small units that can be written and tested independently and integrated together later.
-
-## <a id="history" name="history">History</a>
-
-*   12<sup>th</sup> December, 2023
-    *   Initial release
-*   3<sup>rd</sup> March, 2024
-    *   Updated _TranslatorParser.cs_
-    *   Updated [Test CI workflow](https://github.com/aelassas/tdd/blob/main/.github/workflows/test.yml)
-    *   Added `coverlet.msbuild`
-    *   Removed `coverlet.collector`
-    *   Bump `Microsoft.NET.Test.Sdk` from 17.8.0 to 17.9.0
-    *   Bump `xunit` from 2.6.3 to 2.7.0
-    *   Bump `xunit.runner.visualstudio` from 2.5.5 to 2.5.7
-*   28<sup>th</sup> August, 2024
-    *   Bump `Microsoft.NET.Test.Sdk` from 17.9.0 to 17.11.0
-    *   Bump `xunit` from 2.7.0 to 2.9.0
-    *   Bump `xunit.runner.visualstudio` from 2.5.7 to 2.8.2
