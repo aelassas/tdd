@@ -1,5 +1,7 @@
 [![Build](https://github.com/aelassas/tdd/actions/workflows/build.yml/badge.svg)](https://github.com/aelassas/tdd/actions/workflows/build.yml) [![Test](https://github.com/aelassas/tdd/actions/workflows/test.yml/badge.svg)](https://github.com/aelassas/tdd/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/aelassas/tdd/graph/badge.svg?token=1ZOJ3K0U8B)](https://codecov.io/gh/aelassas/tdd)
 
+Test-Driven Development (TDD) is a powerful approach that transforms how developers write code. Whether you're new to programming or looking to level up your skills, this guide will walk you through the essentials of TDD. You'll discover how writing tests before code can lead to more robust, maintainable software and boost your confidence as a developer. Let's explore the fundamentals together and set you on the path to becoming a test-driven practitioner.
+
 ## Contents
 
 1.  [Introduction](#intro)
@@ -40,7 +42,7 @@ To summarize, this is done in five steps:
 
 We can notice that in the workflow explained above, the tests are executed after the code has been refactored. This ensures that the code remains correct after refactoring.
 
-This article will discuss TDD in C# through a simple example. The purpose of the example is to describe each step of TDD. The example will be developed in C# and the testing framework used is xUnit. We will be using Moq for mocking and dotCover for code coverage. We will be creating a multilingual translator through TDD. When writing code, we will try to respect SOLID principles and achieve 100% code coverage.
+This article will discuss TDD through a very simple example. The purpose of the example is to describe each step of TDD. The example will be developed in C# and the testing framework used is xUnit. We will be using Moq for mocking and dotCover for code coverage. We will be creating a multilingual translator through TDD. When writing code, we will try to respect SOLID principles and achieve 100% code coverage.
 
 ## <a id="dev-env" name="dev-env">Development Environment</a>
 
@@ -1069,13 +1071,46 @@ To run the source code, do the following:
 
 ## <a id="tdd-time-waster" name="tdd-time-waster">Is TDD a Time Waster?</a>
 
-At first, it does kind of look like a waste of time. In the beginning of the project, it slows the development progress because we have to invest time on the hassle of writing tests, but as the project grows, it actually saves more time than the time used in the beginning. It saves time by making future changes quicker and less risky by ensuring that the changes don't break the code. It also saves time by making sure that the code that you write doesn't deviate from the real purpose and the requirements.
+The short answer is no - but the reality deserves a thoughtful discussion.
 
-If the purpose of the project is clear, if the project is going to evolve over time and using TDD will save time while it grows, and if you really know what you're doing, you can then decide whether to use TDD or not.
+While TDD requires upfront time investment in writing tests before code, it typically saves significant time in the long run through:
+
+**Reduced Debugging Time**
+
+- Tests catch bugs immediately rather than during later testing phases
+- Problems are easier to fix when the related code is fresh in your mind
+- Fewer issues make it to production, saving emergency debugging sessions
+
+**Improved Code Quality**
+
+- Writing tests first forces better design decisions
+- Code is naturally more modular and maintainable
+- Refactoring becomes safer and faster with test coverage
+
+**Documentation Benefits**
+
+- Tests serve as living documentation of how code should behave
+- New team members can understand expectations by reading tests
+- Less time spent writing and maintaining separate documentation
+
+
+**Faster Development Cycles**
+
+  - While initial development might feel slower, overall delivery speeds up
+  - Less time spent on bug fixes and rework
+  - More confident and rapid deployments
+
+Common Time-Related Misconceptions:
+
+- "Writing tests doubles development time" - Actually, TDD often reduces total development time when accounting for debugging and maintenance
+- "TDD slows down prototyping" - You can adjust test coverage based on project phase
+- "Tests take too long to maintain" - Well-written tests require less maintenance than fixing recurring bugs
+
+The key is viewing TDD as an investment rather than overhead. Like any skill, it takes time to master, but the returns in code quality, developer confidence, and long-term maintenance costs make it worthwhile for most projects.
 
 ## <a id="conclusion" name="conclusion">Conclusion</a>
 
-This article demonstrates TDD in C# through a very simple example.
+This article demonstrates TDD through a very simple example.
 
 We can notice with TDD:
 
@@ -1087,6 +1122,4 @@ We can notice with TDD:
 *   The code is more coherent.
 *   Behavior is clear.
 
-TDD is very useful when the code is continuously improved.
-
-TDD provides additional benefits because developers think about software in terms of small units that can be written and tested independently and integrated together later.
+Test-Driven Development shines brightest in environments where code evolves continuously. By breaking down software into small, testable units, TDD empowers developers to make changes with confidence. This approach not only ensures code quality but fundamentally shifts how we think about software design. Rather than viewing applications as monolithic structures, TDD encourages a modular mindset where components are crafted independently, thoroughly tested, and seamlessly integrated. As you begin your TDD journey, remember that you're not just learning a testing methodology – you're adopting a development philosophy that will help you build more maintainable, reliable, and scalable software.
