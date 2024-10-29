@@ -46,7 +46,7 @@ This article will discuss TDD through a very simple example. The purpose of the 
 
 ## <a id="dev-env" name="dev-env">Development Environment</a>
 
-*   Visual Studio 2022 >= 17.8.0
+*   Visual Studio 2022
 *   .NET 8.0
 
 ## <a id="prerequisites" name="prerequisites">Prerequisites</a>
