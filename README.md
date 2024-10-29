@@ -20,7 +20,8 @@ Test-Driven Development (TDD) is a powerful approach that transforms how develop
 11.  [Code Coverage](#code-coverage)
 12.  [Running the Source Code](#run-src)
 13.  [Is TDD a Time Waster?](#tdd-time-waster)
-14.  [Conclusion](#conclusion)
+14.  [Common Time-Related Misconceptions](#misconceptions)
+15.  [Conclusion](#conclusion)
 
 ## <a id="intro" name="intro">Introduction</a>
 
@@ -1100,7 +1101,7 @@ While TDD requires upfront time investment in writing tests before code, it typi
   - Less time spent on bug fixes and rework
   - More confident and rapid deployments
 
-Common Time-Related Misconceptions:
+## <a id="misconceptions" name="misconceptions">Common Time-Related Misconceptions</a>
 
 - "Writing tests doubles development time" - Actually, TDD often reduces total development time when accounting for debugging and maintenance
 - "TDD slows down prototyping" - You can adjust test coverage based on project phase
