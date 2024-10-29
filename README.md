@@ -19,9 +19,10 @@ Test-Driven Development (TDD) is a powerful approach that transforms how develop
 10.  [Test Results](#test-results)
 11.  [Code Coverage](#code-coverage)
 12.  [Running the Source Code](#run-src)
-13.  [Is TDD a Time Waster?](#tdd-time-waster)
-14.  [Common Time-Related Misconceptions](#misconceptions)
-15.  [Conclusion](#conclusion)
+13.  [CI/CD](#ci)
+14.  [Is TDD a Time Waster?](#tdd-time-waster)
+15.  [Common Time-Related Misconceptions](#misconceptions)
+16.  [Conclusion](#conclusion)
 
 ## <a id="intro" name="intro">Introduction</a>
 
@@ -1069,6 +1070,114 @@ To run the source code, do the following:
 2.  Open _tdd.sln_ in Visual Studio 2022.
 3.  Run all the tests in the solution.
 4.  To get code coverage, you can use dotCover.
+
+## <a id="ci" name="ci">CI/CD</a>
+
+Test-Driven Development (TDD) and code coverage play significant roles in enhancing Continuous Integration/Continuous Deployment (CI/CD) practices. Here's how they influence the process:
+
+**TDD (Test-Driven Development)**
+
+1. Improved Code Quality: TDD emphasizes writing tests before code, which leads to better-designed, more maintainable code. This ensures that the code meets requirements from the start, reducing bugs in later stages.
+2. Faster Feedback Loop: With TDD, developers receive immediate feedback on their code. When integrated into a CI/CD pipeline, this rapid feedback helps catch issues early, allowing for quicker iterations and deployments.
+3. Reduced Debugging Time: Since tests are written alongside code, developers can identify and fix bugs early in the development process, minimizing the time spent on debugging later.
+
+**Code Coverage**
+
+1. Measurement of Test Effectiveness: Code coverage tools analyze how much of the codebase is tested by unit tests. High coverage indicates that most of the code is exercised by tests, providing confidence that changes won’t introduce new bugs.
+2. Guiding Refactoring: With insights from code coverage reports, developers can identify untested or poorly tested areas of the code. This can guide efforts to improve code quality and test completeness.
+3. Enhanced CI/CD Confidence: High code coverage and comprehensive test suites increase confidence in deploying changes. CI/CD pipelines can be designed to fail deployments if coverage drops below a certain threshold, ensuring that quality is maintained.
+
+**Overall Influence**
+
+- Streamlined Development: TDD and code coverage promote a culture of quality and accountability, leading to smoother CI/CD processes where developers feel confident pushing changes.
+- Risk Mitigation: By ensuring that changes are well-tested and documented through TDD and monitoring code coverage, teams can significantly reduce the risks associated with deployment.
+
+In summary, TDD and code coverage are integral to building robust CI/CD pipelines, fostering a culture of quality and continuous improvement in software development.
+
+### Build Workflow
+
+Here is the build workflow of our project:
+```yaml
+name:  build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-dotnet@v3
+        with:
+            dotnet-version: 8.x
+      - name: Build
+        run: dotnet build
+```
+Let's break down what this workflow does:
+
+**Trigger Conditions**:
+
+- Activates when someone pushes directly to the main branch
+- Activates when someone opens/updates a pull request targeting main
+
+**Environment**:
+
+- Uses a Windows environment (windows-latest)
+- Good for .NET projects which are often Windows-based
+
+**Steps in Order**:
+
+- Checks out the code using checkout@v3
+- Installs .NET 8.x using setup-dotnet@v3
+- Runs the build command using dotnet build
+
+### Test Worfklow
+
+Here is the test workflow of our project:
+```yaml
+name: test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-dotnet@v3
+        with:
+            dotnet-version: 8.x
+      - name: Test
+        run: dotnet test --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: coverage.cobertura.xml
+          directory: ./tests/Translator.UnitTests
+```
+
+Let's break down what this workflow does:
+
+**Test Execution**:
+
+- Runs tests with detailed output (--verbosity normal)
+- Collects code coverage using Coverlet
+- Generates report in Cobertura format (widely supported)
+
+**Coverage Integration**:
+
+- Uses Codecov for coverage tracking
+- Requires a CODECOV_TOKEN secret in repository
+- Specifies the test directory path
 
 ## <a id="tdd-time-waster" name="tdd-time-waster">Is TDD a Time Waster?</a>
 
