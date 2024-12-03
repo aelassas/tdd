@@ -14,7 +14,7 @@ jobs:
       - uses: actions/setup-dotnet@v3
         with:
             dotnet-version: 8.x
-      - name: Test
+      - name: Run tests
         run: dotnet test --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
         
       - name: Upload coverage reports to Codecov
