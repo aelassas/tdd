@@ -32,5 +32,4 @@ jobs:
           file: ./tests/Translator.UnitTests/coverage.cobertura.xml
           base-path: src/Translator
           fail-on-error: true
-          debug: true
           measure: true
