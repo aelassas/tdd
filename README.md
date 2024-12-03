@@ -1,4 +1,9 @@
-[![Build](https://github.com/aelassas/tdd/actions/workflows/build.yml/badge.svg)](https://github.com/aelassas/tdd/actions/workflows/build.yml) [![Test](https://github.com/aelassas/tdd/actions/workflows/test.yml/badge.svg)](https://github.com/aelassas/tdd/actions/workflows/test.yml) [![codecov](https://codecov.io/gh/aelassas/tdd/graph/badge.svg?token=1ZOJ3K0U8B)](https://codecov.io/gh/aelassas/tdd)
+[![Build](https://github.com/aelassas/tdd/actions/workflows/build.yml/badge.svg)](https://github.com/aelassas/tdd/actions/workflows/build.yml) [![Test](https://github.com/aelassas/tdd/actions/workflows/test.yml/badge.svg)](https://github.com/aelassas/tdd/actions/workflows/test.yml) [![coveralls](https://coveralls.io/repos/github/aelassas/tdd/badge.svg?branch=main)](https://coveralls.io/github/aelassas/tdd?branch=main)
+
+<!--
+[![coveralls](https://coveralls.io/repos/github/aelassas/tdd/badge.svg?branch=main)](https://coveralls.io/github/aelassas/tdd?branch=main)
+[![codecov](https://codecov.io/gh/aelassas/tdd/graph/badge.svg?token=1ZOJ3K0U8B)](https://codecov.io/gh/aelassas/tdd)
+-->
 
 Test-Driven Development (TDD) is a powerful approach that transforms how developers write code. Whether you're new to programming or looking to level up your skills, this guide will walk you through the essentials of TDD. You'll discover how writing tests before code can lead to more robust, maintainable software and boost your confidence as a developer. Let's explore the fundamentals together and set you on the path to becoming a test-driven practitioner.
 
