@@ -33,4 +33,3 @@ jobs:
           base-path: src/Translator
           fail-on-error: true
           measure: true
-          debug: true
